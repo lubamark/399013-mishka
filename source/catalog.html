@@ -2,106 +2,73 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Магазин «Мишка»</title>
+    <title>Каталог товаров / Магазин «Мишка»</title>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--cart">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item site-list__item--search">
+                <a class="site-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item site-list__item--cart">
+                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
     <section class="modal modal-add">
       <h2 class="modal-add__titile">Добавить в корзину</h2>
-      <form class="add-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="add-form__fieldset">
-          <legend class="add-form__legend">
-            Выберите размер
-          </legend>
-          <input class="add-form__radio" id="size-s" type="radio" name="size" value="s">
-          <label class="add-form__label" for="size-s">S</label>
-          <input class="add-form__radio" id="size-m" type="radio" name="size" value="m">
-          <label class="add-form__label" for="size-m">M</label>
-          <input class="add-form__radio" id="size-l" type="radio" name="size" value="l">
-          <label class="add-form__label" for="size-l">L</label>
-        </fieldset>
-        <button class="button add-form__submit" type="submit">Добавить</button>
-      </form>
-    </section>
-    <main class="page-inner">
-      <h1 class="page-inner__title headline">Каталог товаров</h1>
       <div class="container">
-        <!-- В стайлгайде есть состояние для карточки, на которую нажали, нам нужно ее делать ссылкой? Но на ней же есть интерактивная кнопка добавить в корзину. Она просто отзывается на поведение? -->
-          <ul class="catalog-list">
-            <li class="catalog-list__item">
-              <img class="catalog-list__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
-              <h3 class="catalog-list__title title">Зайчик-попрыгайчик</h3>
-              <p class="catalog-list__description">Рост 30 см, вес 200 г</p>
-              <p class="catalog-list__price">1 200 руб.</p>
-              <button class="catalog-list__button" type="button"><span class="viasually-hidden">Добавить в корзину</span></button>
-            </li>
-            <li class="catalog-list__item">
-              <img class="catalog-list__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
-              <h3 class="catalog-list__title title">Корзинка для белья</h3>
-              <p class= "catalog-list__description">Диаметр 15 см, выстоа 10 см</p>
-              <p class="catalog-list__price">690 руб.</p>
-              <button class="catalog-list__button" type="button"><span class="viasually-hidden">Добавить в корзину</span></button>
-            </li>
-            <li class="catalog-list__item">
-              <img class="catalog-list__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
-              <h3 class="catalog-list__title title">Большая корзинка для игрушек</h3>
-              <p class="catalog-list__description">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog-list__price">1 500 руб.</p>
-              <button class="catalog-list__button" type="button"><span class="viasually-hidden">Добавить в корзину</span></button>
-            </li>
-          </ul>
-          <!-- У нас тут будет видео, или это мы картинку так оформляем?-->
-          <article class="video">
-            <h2 class="video__title title">Процесс производства</h2>
-              <img class="video__item" width="260" height="150" src="http://placehold.it/260x150">
-              <div class="video__wrapper">
-                <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                <button class="video__button button">Сделать заказ</button>
-              </div>
-          </article>
-
+        <form class="add-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="add-form__fieldset">
+            <legend class="add-form__legend">
+              Выберите размер
+            </legend>
+            <input class="add-form__radio" id="size-s" type="radio" name="size" value="s">
+            <label class="add-form__label" for="size-s">S</label>
+            <input class="add-form__radio" id="size-m" type="radio" name="size" value="m">
+            <label class="add-form__label" for="size-m">M</label>
+            <input class="add-form__radio" id="size-l" type="radio" name="size" value="l">
+            <label class="add-form__label" for="size-l">L</label>
+          </fieldset>
+          <button class="button add-form__submit" type="submit">Добавить</button>
+        </form>
       </div>
-
+    </section>
     </main>
-    <footer class="page-footer">
-      <ul class="social-list page-footer__social">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="#"><span class="viasually-hidden">Мы в Инстаграме</span</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#"><span class="viasually-hidden">Мы на Фэйсбуке</span</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href="#" ><span class="viasually-hidden">Мы в Твиттере</span</a>
-        </li>
-      </ul>
-      <div class="copyright">
-        Разработано
-        <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive" target="_blank"><span class="viasually-hidden">в HTML Академии</span></a>
-      </div>
-    </footer>
+    <div class="container">
+      <footer class="page-footer">
+        <ul class="social-list page-footer__social">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="#"><span class="viasually-hidden">Мы в Инстаграме</span</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#"><span class="viasually-hidden">Мы на Фэйсбуке</span</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#" ><span class="viasually-hidden">Мы в Твиттере</span</a>
+          </li>
+        </ul>
+        <div class="copyright">
+          Разработано
+          <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive" target="_blank"><span class="viasually-hidden">в HTML Академии</span></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
