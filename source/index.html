@@ -29,7 +29,23 @@
         </div>
       </nav>
     </header>
-
+    <section class="modal modal-order">
+      <h2 class="modal-order__titile">Добавить в корзину</h2>
+      <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">
+            Выберите размер
+          </legend>
+          <input class="order-form__radio" id="size-s" type="radio" name="size" value="s">
+          <label class="order-form__label" for="size-s">S</label>
+          <input class="order-form__radio" id="size-m" type="radio" name="size" value="m">
+          <label class="order-form__label" for="size-m">M</label>
+          <input class="order-form__radio" id="size-l" type="radio" name="size" value="l">
+          <label class="order-form__label" for="size-l">L</label>
+        </fieldset>
+        <button class="button order-form__submit" type="submit">Добавить</button>
+      </form>
+    </section>
     <main class="page-main">
       <h1 class="page-main__title headline">Милые штуки ручной работы для дома</h1>
       <section class="products">
@@ -146,11 +162,5 @@
         <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive" target="_blank"><span class="viasually-hidden">в HTML Академии</span></a>
       </div>
     </footer>
-    <div class="modal modal-order">
-      <h2 class="modal-order__titile">Добавить в корзину</h2>
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-
-      </form>
-    </div>
   </body>
 </html>
