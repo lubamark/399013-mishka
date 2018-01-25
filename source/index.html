@@ -7,14 +7,15 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container container--header">
         <nav class="main-nav">
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img\logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
           </a>
           <!--для переключения иконки модификатор close -->
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
-          <div class="main-nav__wrapper">
+          <!--для переключения иконки модификатор open -->
+          <div class="main-nav__wrapper main-nav__wrapper--open">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -24,6 +25,7 @@
               </li>
             </ul>
             <ul class="main-nav__list user-list">
+<!--если мы вставляем иконки контентом, то мы просто копируем код и делаем класс svg и стилизуем: абсолютное позиционирование, ховер, нажатие, мы вставляем их в <a></a>?-->
               <li class="user-list__item user-list__item--search">
                 <a class="user-list__link" href="#">Поиск по сайту</a>
               </li>

@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+.main-nav__wrapper{
+  display: none;
+
+  &--open{
+    display: block;
+  }
+}
+
 .main-nav__toggle{
   position: absolute;
   top: 0;

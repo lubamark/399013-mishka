@@ -7,13 +7,15 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
-        </a>
+      <div class="container container--header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img\logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          </a>
+          <!--для переключения иконки модификатор close -->
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
+          <!--для переключения иконки модификатор open -->
+          <div class="main-nav__wrapper main-nav__wrapper--open">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -23,11 +25,11 @@
               </li>
             </ul>
             <ul class="main-nav__list user-list">
-              <li class="site-list__item site-list__item--search">
-                <a class="site-list__link" href="#">Поиск по сайту</a>
+              <li class="user-list__item user-list__item--search">
+                <a class="user-list__link" href="#">Поиск по сайту</a>
               </li>
-              <li class="site-list__item site-list__item--cart">
-                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              <li class="user-list__item user-list__item--cart">
+                <a class="user-list__link" href="#">Корзина: пока пуста</a>
               </li>
             </ul>
           </div>
