@@ -1,3 +1,8 @@
-$primary-color: hsla(168, 45, 77 ,1);
-$light-grey: hsla(0, 0, 93, 1);
+$primary-color: hsla(168, 54%, 60%, 1);
+$primary-dark-color: darken($primary-color, 6%);
+
+$light-grey: hsla(0, 0, 93%, 1);
+$dark-grey: hsla(0, 0, 27%, 1);
+
 $text-color: hsla(0, 0, 0, 1);
+$text-light-color: lighten($text-color, 27%);
