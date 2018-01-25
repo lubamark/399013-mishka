@@ -1,0 +1,27 @@
+.main-nav{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__toggle{
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  margin:0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-image:url("../../img/icon-menu-open.svg");
+  border: none;
+  cursor:pointer;
+
+  &--close{
+    background-image: url("../../img/icon-menu-close.svg");
+  }
+}
