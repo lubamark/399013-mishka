@@ -19,7 +19,7 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: $text-light-color;
+  color: $dark-grey;
 }
 
 .week-product__table{
@@ -29,10 +29,10 @@
   border-collapse: collapse;
   font-size: 15px;
   line-height: 20px;
-  color: $text-light-color;
+  color: $dark-grey;
 
   & tr {
-    border-bottom: 1px solid $light-grey
+    border-bottom: 1px solid $light-grey;
   }
 
   & td{
@@ -46,5 +46,5 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: $text-light-color;
+  color: $dark-grey;;
 }
