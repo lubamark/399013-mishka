@@ -13,7 +13,7 @@
             <img class="page-header__logo-image" src="img\logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
           </a>
           <!--для переключения иконки модификатор close -->
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
           <!--для переключения иконки модификатор open -->
           <div class="main-nav__wrapper main-nav__wrapper--open">
             <ul class="main-nav__list site-list">
@@ -81,6 +81,7 @@
             </div>
           </fieldset>
           <fieldset class="order-form__fieldset">
+<!--Нам сказали не расставлять префиксы, но без этого плейсхолдер нормально не стилизуется, не трогаю пока, да? -->
             <h3 class="order-form__legend">ФИО</h3>
             <div class="order-form__group">
               <label class="order-form__label" for="name">Имя:</label>
@@ -107,10 +108,10 @@
             </div>
             <div class="order-form__group">
               <label class="order-form__legend" for="wishes">Доп</label>
-              <textarea class="order-form__input" name="wishes" id="wishes" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
+              <textarea class="order-form__input order-form__input--textarea" name="wishes" id="wishes" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
             </div>
+            <small class="order-form__caption">*Поля обязательны для заполнения</small>
           </fieldset>
-          <small class="order-form__caption">*Поля обязательны для заполнения</small>
           <button class="button order-form_submit" type="submit">Отправить заказ</button>
         </form>
       </div>
@@ -118,7 +119,6 @@
     <footer class="page-footer">
       <div class="container">
         <ul class="social-list page-footer__social">
-          <!--Попробовала вставить иконки и стилизовать, скажешь потом, что так что не так, я так понимаю, что для состояния иконок лучше миксин написать?-->
           <li class="social-list__item">
             <a class="social-list__link social-list__link--instagram" href="#">
               <svg  xmlns="http://www.w3.org/2000/svg" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334">
