@@ -1,4 +1,4 @@
-.social-list{
+.social-list {
   display: flex;
   flex-direction: row;
 
@@ -6,21 +6,21 @@
   list-style: none;
 }
 
-.social-list__item{
+.social-list__item {
   margin-right: 40px;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 }
 
-.social-list__link{
+.social-list__link {
   &:hover path,
-  &:focus path{
+  &:focus path {
     fill: $primary-color;
   }
 
-  &:active path{
+  &:active path {
     fill: lighten($primary-color, 30%);
   }
 }

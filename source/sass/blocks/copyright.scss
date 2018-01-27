@@ -1,4 +1,4 @@
-.copyright{
+.copyright {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -8,7 +8,7 @@
   border-top: 1px solid hsl(0, 0, 90%);
 }
 
-.copyright__text{
+.copyright__text {
   margin: 0;
   font-size: 18px;
   line-height: 19px;
@@ -16,17 +16,17 @@
   margin-right: 25px;
 }
 
-.copyright__link{
-  & path{
-    fill:$primary-color;
+.copyright__link {
+  & path {
+    fill: $primary-color;
   }
 
   &:hover path,
-  &focus path{
-    fill:$primary-dark-color;
+  &focus path {
+    fill: $primary-dark-color;
   }
 
-  &:active path{
+  &:active path {
     fill: lighten($primary-color, 30%);
   }
 }

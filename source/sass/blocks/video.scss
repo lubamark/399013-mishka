@@ -1,9 +1,9 @@
-.video{
+.video {
   @include card-shadow;
   padding: 25px 35px 30px 35px;
 }
 
-.video__title{
+.video__title {
   margin-bottom: 20px;
 
   font-size: 17px;
@@ -11,15 +11,15 @@
   font-weight: 700;
 }
 
-.video__player{
+.video__player {
   margin: 0 -35px 0 -35px;
 
-  & img{
+  & img {
     width: 100%;
     height: auto;
   }
 }
 
-.video__description{
+.video__description {
   margin-bottom: 25px;
 }

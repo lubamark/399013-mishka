@@ -1,18 +1,18 @@
-.main-nav{
+.main-nav {
   position: relative;
   margin: 0;
   padding: 0;
 }
 
-.main-nav__wrapper{
+.main-nav__wrapper {
   display: none;
 
-  &--open{
+  &--open {
     display: block;
   }
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
@@ -24,12 +24,12 @@
 
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position:50% 50%;
-  background-image:url("../../img/icon-menu-open.svg");
+  background-position: 50% 50%;
+  background-image: url("../../img/icon-menu-open.svg");
   border: none;
-  cursor:pointer;
+  cursor: pointer;
 
-  &--close{
+  &--close {
     background-image: url("../../img/icon-menu-close.svg");
   }
 }

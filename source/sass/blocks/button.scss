@@ -1,4 +1,4 @@
-.button{
+.button {
   display: block;
   padding: 15px;
 
@@ -15,12 +15,12 @@
   border: 2px solid $dark-grey;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: white;
     background-color: $dark-grey;
   }
 
-  &:active{
+  &:active {
     color: hsla(0, 0, 100%, 0.3);
   }
 }

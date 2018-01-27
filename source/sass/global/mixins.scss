@@ -1,46 +1,46 @@
-@mixin simple-text{
+@mixin simple-text {
   font-size: 15px;
   line-height: 30px;
   color: $dark-grey;
 }
 
-@mixin icon-condition{
-  & path{
+@mixin icon-condition {
+  & path {
     fill: $light-grey;
   }
 
   &:hover path,
-  &:focus path{
+  &:focus path {
     fill: $primary-color;
   }
 
-  &:active path{
-    fill: lighten($primary-color,30%);
+  &:active path {
+    fill: lighten($primary-color, 30%);
   }
 }
 
-@mixin black-link {
+@mixin black-link  {
   text-decoration: none;
   color: $text-color;
 
   &:hover,
-  &focus{
+  &focus {
     color: lighten($text-color, 40%);
   }
 
-  &:active{
+  &:active {
     color: lighten($text-color, 70%);
   }
 }
 
-@mixin card-shadow{
+@mixin card-shadow {
   border: $light-border;
   &:hover,
-  &focus{
+  &focus {
     box-shadow: 0 6px 10px 0 hsla(0, 0, 0, 0.1);
   }
 
-  &:active{
+  &:active {
     box-shadow: 0 3px 5px 0 hsla(0, 0, 0, 0.1);
   }
 }

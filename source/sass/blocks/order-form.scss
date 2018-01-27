@@ -1,20 +1,20 @@
-.order-form{
+.order-form {
   margin-bottom: 55px;
 }
 
-.order-form__fieldset{
+.order-form__fieldset {
   margin: 0 0 20px 0;
   padding: 0;
   border: none;
 }
 
-.order-form__group{
+.order-form__group {
   margin-bottom: 25px;
 }
 
-.order-form__legend{
-  display:flex;
-  align-items:center;
+.order-form__legend {
+  display: flex;
+  align-items: center;
 
   margin: 0 0 20px 0;
   font-size: 17px;
@@ -25,10 +25,10 @@
   color: $primary-color;
   background-color: white;
 
-  &::after{
+  &::after {
     content: "";
-    flex-grow:1;
-    flex-shrink:0;
+    flex-grow: 1;
+    flex-shrink: 0;
     margin-left: 25px;
 
     width: 30px;
@@ -38,15 +38,15 @@
 }
 
 .order-form__radio,
-.order-form__checkbox{
-  &:checked + .order-form__label::after{
+.order-form__checkbox {
+  &:checked + .order-form__label::after {
     content: "";
     position: absolute;
   }
 }
 
-.order-form__radio{
-  &:checked + .order-form__label--radio::after{
+.order-form__radio {
+  &:checked + .order-form__label--radio::after {
     top: 10px;
     left: 10px;
 
@@ -57,8 +57,8 @@
   }
 }
 
-.order-form__radio{
-  &:checked + .order-form__label--checkbox::after{
+.order-form__checkbox {
+  &:checked + .order-form__label--checkbox::after {
     top: 3px;
     left: 13px;
     width: 15px;
@@ -70,7 +70,7 @@
   }
 }
 
-.order-form__label{
+.order-form__label {
   position: relative;
 
   display: block;
@@ -81,12 +81,12 @@
 
 
   &--radio,
-  &--checkbox{
+  &--checkbox {
     padding-top: 10px;
     padding-left: 60px;
     min-height: 40px;
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -97,22 +97,22 @@
     }
   }
 
-  &--radio::before{
+  &--radio::before {
     border-radius: 50%;
   }
 
   &:hover::before ,
   .order-form__radio:focus + &::before,
-  .order-form__checkbox:focus + &::before{
+  .order-form__checkbox:focus + &::before {
     border-color: $primary-color;
   }
 
-  &:active::before{
+  &:active::before {
     border-color: $light-grey;
   }
 }
 
-.order-form__input{
+.order-form__input {
   width: 100%;
   padding-bottom: 20px;
 
@@ -125,26 +125,26 @@
   border-bottom: 2px solid black;
 
   &:focus,
-  &:hover{
+  &:hover {
     border-color: $primary-color;
   }
 
-  &--textarea{
+  &--textarea {
     padding: 15px;
     border: 2px solid black;
   }
 
-  &::placeholder{
+  &::placeholder {
     color: $dark-grey;
   }
 }
 
-.order-form__caption{
+.order-form__caption {
   font-size: 14px;
   line-height: 16px;
   color: $dark-grey;
 }
 
-.order-form_submit{
+.order-form_submit {
   width: 100%;
 }

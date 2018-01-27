@@ -1,45 +1,45 @@
-.contacts-item{
+.contacts-item {
   display: flex;
+
   @include simple-text;
   margin-bottom: 30px;
 }
 
-.contacts-item__label{
+.contacts-item__label {
   min-width: 75px;
-
 }
 
-.contacts-item__value{
+.contacts-item__value {
   min-width: 185px;
 }
 
-.contacts-item__link{
+.contacts-item__link {
   @include simple-text;
   text-decoration: none;
   border-bottom: 1px solid $primary-color;
 
   &:hover,
-  &focus{
+  &focus {
     color: $primary-color;
   }
 
-  &:active{
+  &:active {
     color: lighten($primary-color, 30%);
   }
 }
 
-.contacts__map{
+.contacts__map {
   position: relative;
 
   width: 100%;
   height: 460px;
   margin-bottom: 40px;
 
-  &::before{
+  &::before {
     content: "";
 
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
