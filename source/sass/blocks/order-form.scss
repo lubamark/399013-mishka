@@ -101,7 +101,7 @@
     border-radius: 50%;
   }
 
-  &:hover::before ,
+  &:hover::before,
   .order-form__radio:focus + &::before,
   .order-form__checkbox:focus + &::before {
     border-color: $primary-color;

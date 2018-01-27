@@ -4,11 +4,11 @@
   padding: 0;
 }
 
-.site-list__item  {
+.site-list__item {
   border-bottom: 1px solid $light-grey;
 }
 
-.site-list__link  {
+.site-list__link {
   @include black-link;
   display: block;
   padding: 25px 25px 25px 70px;

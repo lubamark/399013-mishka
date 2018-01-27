@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -11,13 +13,13 @@ body {
   padding: 0;
   min-width: 320px;
 
-  font-family:"Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: $text-color;
 }
 
-.visually-hidden  {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
