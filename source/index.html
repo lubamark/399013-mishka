@@ -13,7 +13,7 @@
             <img class="page-header__logo-image" src="img\logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
           </a>
           <!--для переключения иконки модификатор close -->
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
           <!--для переключения иконки модификатор open -->
           <div class="main-nav__wrapper main-nav__wrapper--open">
             <ul class="main-nav__list site-list">
@@ -143,7 +143,7 @@
           <img class="contacts__img" src="img\map-mobile@1x.jpg" width="320" height="460" alt="Магазин на карте">
         </div>
         <div class="container">
-          <a class="button contacts__button">Напишите нам</a>
+          <a class="button contacts__button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -192,17 +192,21 @@
         </div>
       </div>
     </footer>
+<!--чтобы высветлить фон, нам нужно секции задать размер 100% и бэкграунд,  а внутри добавить само окно и вот эти все свойства ему добавлять, а не как сейчас? или мы добавим в js прозрачность для body ghb при открытии? -->
     <section class="modal modal-add">
-      <h2 class="modal-add__titile">Добавить в корзину</h2>
+      <h2 class="modal-add__titile title">Добавить в&nbsp;корзину</h2>
       <form class="add-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="add-form__fieldset">
-          <legend class="add-form__legend">Выберите размер</legend>
-          <input class="add-form__radio" id="size-s" type="radio" name="size" value="s">
-          <label class="add-form__label" for="size-s">S</label>
-          <input class="add-form__radio" id="size-m" type="radio" name="size" value="m">
-          <label class="add-form__label" for="size-m">M</label>
-          <input class="add-form__radio" id="size-l" type="radio" name="size" value="l">
-          <label class="add-form__label" for="size-l">L</label>
+          <legend class="add-form__legend">Выберите размер:</legend>
+          <div class="add-form__group">
+            <input class="add-form__radio visually-hidden" id="size-s" type="radio" name="size" value="s" checked>
+            <label class="add-form__label" for="size-s">S</label>
+            <input class="add-form__radio visually-hidden" id="size-m" type="radio" name="size" value="m">
+            <label class="add-form__label" for="size-m">M</label>
+            <input class="add-form__radio visually-hidden" id="size-l" type="radio" name="size" value="l">
+            <label class="add-form__label" for="size-l">L</label>
+          </div>
+
         </fieldset>
         <button class="button add-form__submit" type="submit">Добавить</button>
       </form>
