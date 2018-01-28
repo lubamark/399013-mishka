@@ -35,7 +35,7 @@
 
   &:hover,
   .add-form__radio:focus + & {
-    border-color: darken($light-grey, 20%);
+    border-color: $middle-grey;
   }
 
   .add-form__radio:active + &,
@@ -47,11 +47,11 @@
 .add-form__submit {
   width: 100%;
   background-color: $primary-color;
-  color: white;
+  color: $white;
   border: none;
   border-radius: 0;
 
   &:hover {
-    background-color: desaturate($primary-color, 7%);
+    background-color: $primary-color-hover;
   }
 }

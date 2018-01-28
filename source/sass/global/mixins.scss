@@ -4,9 +4,9 @@
   color: $dark-grey;
 }
 
-@mixin icon-condition {
-  & path {
-    fill: $light-grey;
+@mixin icon-condition($color) {
+  path {
+    fill: $color;
   }
 
   &:hover path,
@@ -15,21 +15,21 @@
   }
 
   &:active path {
-    fill: lighten($primary-color, 30%);
+    fill: $primary-color-opacify;
   }
 }
 
 @mixin black-link {
   text-decoration: none;
-  color: $text-color;
+  color: $black;
 
   &:hover,
-  &focus {
-    color: lighten($text-color, 40%);
+  &:focus {
+    color: $middle-dark-grey;
   }
 
   &:active {
-    color: lighten($text-color, 70%);
+    color: $middle-grey;
   }
 }
 
@@ -37,7 +37,7 @@
   border: $light-border;
 
   &:hover,
-  &focus {
+  &:focus {
     box-shadow: 0 6px 10px 0 hsla(0, 0, 0, 0.1);
   }
 

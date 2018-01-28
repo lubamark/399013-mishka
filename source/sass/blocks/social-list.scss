@@ -15,12 +15,5 @@
 }
 
 .social-list__link {
-  &:hover path,
-  &:focus path {
-    fill: $primary-color;
-  }
-
-  &:active path {
-    fill: lighten($primary-color, 30%);
-  }
+  @include icon-condition($black);
 }

@@ -1,9 +1,17 @@
 $primary-color: hsla(168, 54%, 60%, 1);
-$primary-dark-color: darken($primary-color, 6%);
+$primary-color-hover: hsla(168, 60%, 59%, 1);
+$primary-color-opacify: hsla(168, 54%, 60%, 0.3);
 
-$light-grey: hsla(0, 0, 93%, 1);
+$primary-dark-color: hsla(171, 48%, 55%, 1);
+$primary-dark-color-hover: hsla(171, 50%, 52%, 1);
+
+$white: hsla(0, 0, 100%, 1);
+$white-hover: hsla(0, 0, 100%, 0.3);
+
+$light-grey: hsla(0, 0, 90%, 1);
+$middle-grey: hsla(0, 0, 70%, 1);
+$middle-dark-grey: hsla(0, 0, 40%, 1);
 $dark-grey: hsla(0, 0, 27%, 1);
-
-$text-color: hsla(0, 0, 0, 1);
+$black: hsla(0, 0, 0, 1);
 
 $light-border: 1px solid $light-grey;

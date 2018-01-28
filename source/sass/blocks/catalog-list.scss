@@ -53,7 +53,7 @@
 }
 
 .catalog-list__button {
-  @include icon-condition;
+  @include icon-condition($light-grey);
 
   flex-basis: 30%;
   flex-grow: 1;

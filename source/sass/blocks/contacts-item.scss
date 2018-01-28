@@ -24,6 +24,7 @@
   }
 
   &:active {
-    color: lighten($primary-color, 30%);
+    color: $primary-color-opacify;
+    border-color: $primary-color-opacify;
   }
 }
