@@ -23,7 +23,6 @@
   text-transform: uppercase;
 
   color: $primary-color;
-  background-color: white;
 
   &::after {
     content: "";
@@ -131,7 +130,7 @@
 
   &--textarea {
     padding: 15px;
-    border: 2px solid black;
+    border: 2px solid $text-color;
   }
 
   &::placeholder {
