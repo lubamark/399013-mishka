@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин «Мишка»</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,7 +11,7 @@
       <div class="container container--header">
         <nav class="main-nav">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img\logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
           </a>
           <!--для переключения иконки модификатор close -->
           <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
@@ -69,7 +70,7 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img class="week-product__photo" src="img\triple-set-mobile@1x.jpg" width="260" height="315" alt="Внешний вид корзинок">
+          <img class="week-product__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Внешний вид корзинок">
           <p class="week-product__price">Цена: 990 рублей</p>
           <a class="button week-product__button">Заказать</a>
         </div>
@@ -134,13 +135,8 @@
             </div>
           </div>
         </div>
-<!--Вопрос про слэши. Атом при копипасте ставит их вот такие, но в scss они экранируют последний символ и я переделываю. Надо везде ставить нормальные, да? Я просто не понимаю, почему так, вдруг есть причина
-
-Вопрос про карту, для того, чтобы пин оставался на месте на картинке, нам нужно добавить обертку или по-другому его спозиционировать? по-хорошему, здесь должна быть другая картинка, больше и она должна тянуться с контейнером, просто должна быть центрирована, сразу, чтобы пин двигался с размером. Как вставлять карты через api знаю, как догоним остальных, я поставлю.
-
--->
         <div class="contacts__map" id="map">
-          <img class="contacts__img" src="img\map-mobile@1x.jpg" width="320" height="460" alt="Магазин на карте">
+          <img class="contacts__img" src="img/map-mobile@1x.jpg" width="320" height="460" alt="Магазин на карте">
         </div>
         <div class="container">
           <a class="button contacts__button" href="#">Напишите нам</a>
@@ -150,7 +146,6 @@
     <footer class="page-footer">
       <div class="container">
         <ul class="social-list page-footer__social">
-          <!--Попробовала вставить иконки и стилизовать, скажешь потом, что так что не так, я так понимаю, что для состояния иконок лучше миксин написать?-->
           <li class="social-list__item">
             <a class="social-list__link social-list__link--instagram" href="#">
               <svg  xmlns="http://www.w3.org/2000/svg" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334">
