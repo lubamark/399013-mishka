@@ -1,0 +1,18 @@
+.products {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    max-width: $desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 100px;
+  }
+}
