@@ -1,0 +1,32 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  border-top: 1px solid $middle-grey;
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  margin-right: 25px;
+}
+
+.copyright__link {
+  path {
+    fill: $primary-color;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $primary-dark-color;
+  }
+
+  &:active path {
+    fill: $primary-color-opacify;
+  }
+}

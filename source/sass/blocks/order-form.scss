@@ -1,0 +1,149 @@
+.order-form {
+  margin-bottom: 55px;
+}
+
+.order-form__fieldset {
+  margin: 0 0 20px 0;
+  padding: 0;
+  border: none;
+}
+
+.order-form__group {
+  margin-bottom: 25px;
+}
+
+.order-form__legend {
+  display: flex;
+  align-items: center;
+
+  margin: 0 0 20px 0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $primary-color;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 25px;
+
+    width: 30px;
+    height: 1px;
+    background-color: $primary-color;
+  }
+}
+
+.order-form__radio,
+.order-form__checkbox {
+  &:checked + .order-form__label::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.order-form__radio {
+  &:checked + .order-form__label--radio::after {
+    top: 10px;
+    left: 10px;
+
+    width: 20px;
+    height: 20px;
+    background-color: $primary-color;
+    border-radius: 50%;
+  }
+}
+
+.order-form__checkbox {
+  &:checked + .order-form__label--checkbox::after {
+    top: 3px;
+    left: 13px;
+    width: 15px;
+    height: 28px;
+    transform: rotate(45deg);
+
+    border-bottom: 2px solid $dark-grey;
+    border-right: 2px solid $dark-grey;
+  }
+}
+
+.order-form__label {
+  position: relative;
+
+  display: block;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+
+
+  &--radio,
+  &--checkbox {
+    padding-top: 10px;
+    padding-left: 60px;
+    min-height: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $dark-grey;
+    }
+  }
+
+  &--radio::before {
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  .order-form__radio:focus + &::before,
+  .order-form__checkbox:focus + &::before {
+    border-color: $primary-color;
+  }
+
+  &:active::before {
+    border-color: $light-grey;
+  }
+}
+
+.order-form__input {
+  width: 100%;
+  padding-bottom: 20px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+
+  border: none;
+  border-bottom: 2px solid black;
+
+  &:focus,
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &--textarea {
+    padding: 15px;
+    border: 2px solid $black;
+  }
+
+  &::placeholder {
+    color: $dark-grey;
+  }
+}
+
+.order-form__caption {
+  font-size: 14px;
+  line-height: 16px;
+  color: $dark-grey;
+}
+
+.order-form_submit {
+  width: 100%;
+}

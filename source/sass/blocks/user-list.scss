@@ -1,0 +1,19 @@
+.user-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-list__item {
+  border-bottom: 1px solid $light-grey;
+}
+
+.user-list__link {
+  @include black-link;
+  display: block;
+  padding: 25px 25px 25px 70px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}

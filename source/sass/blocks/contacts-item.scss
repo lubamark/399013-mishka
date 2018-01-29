@@ -1,0 +1,30 @@
+.contacts-item {
+  display: flex;
+
+  @include simple-text;
+  margin-bottom: 30px;
+}
+
+.contacts-item__label {
+  min-width: 75px;
+}
+
+.contacts-item__value {
+  min-width: 185px;
+}
+
+.contacts-item__link {
+  @include simple-text;
+  text-decoration: none;
+  border-bottom: 1px solid $primary-color;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color-opacify;
+    border-color: $primary-color-opacify;
+  }
+}

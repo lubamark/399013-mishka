@@ -1,0 +1,57 @@
+.add-form__fieldset {
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  border: none;
+}
+
+.add-form__legend {
+  @include simple-text;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-form__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-form__label {
+  flex-basis: 33%;
+  padding: 15px 0;
+  margin-right: 7px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+
+  border: 2px solid $light-grey;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover,
+  .add-form__radio:focus + & {
+    border-color: $middle-grey;
+  }
+
+  .add-form__radio:active + &,
+  .add-form__radio:checked + & {
+    border-color: $primary-color;
+  }
+}
+
+.add-form__submit {
+  width: 100%;
+  background-color: $primary-color;
+  color: $white;
+  border: none;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $primary-color-hover;
+  }
+}

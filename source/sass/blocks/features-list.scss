@@ -1,0 +1,30 @@
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features-list__item {
+  position: relative;
+
+  padding: 60px 0 20px 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+
+    width: 60px;
+    height: 60px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--ecologic::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+}
