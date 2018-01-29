@@ -12,6 +12,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    &--open {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 0;
@@ -31,5 +42,11 @@
 
   &--close {
     background-image: url("../img/icon-menu-close.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
   }
 }
