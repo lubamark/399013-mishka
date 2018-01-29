@@ -35,7 +35,12 @@
     margin-right: auto;
     background-size: auto 768px;
     padding-top: 115px;
-    font-size: 43px;
-    line-height: 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    max-width: 700px;
+    padding-top: 150px;
   }
 }
