@@ -18,12 +18,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reviews {
-    .container{
-      padding-left: 275px;
-      padding-right: 100px;
-    }
+    .reviews {
+      max-width: 1050px;
+      margin-left: auto;
+      margin-right: auto;
 
+      .container {
+        padding-left: 175px;
+        padding-right: 0;
+    }
   }
 }
 
