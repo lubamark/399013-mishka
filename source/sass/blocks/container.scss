@@ -1,5 +1,7 @@
 .container {
   width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
   padding: 0 30px;
 
   &--header {
@@ -10,10 +12,6 @@
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 50px;
-
-    &--header {
-      padding: 0;
-    }
   }
 }
 

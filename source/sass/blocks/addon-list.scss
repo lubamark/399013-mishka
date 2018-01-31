@@ -1,0 +1,32 @@
+.addon-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+    display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .addon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    width: 100%;
+    margin-bottom: -80px;
+    z-index: 10;
+  }
+
+  .addon-list__item {
+    min-width: 220px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 28px 0;
+  }
+
+  .addon-list__link {
+    @include black-link;
+  }
+}

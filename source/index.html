@@ -10,33 +10,36 @@
     <header class="page-header">
       <div class="container container--header">
         <nav class="main-nav">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-          </a>
+          <div class="main-nav__logo">
+            <a class="main-nav__link">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+            </a>
+          </div>
           <!--для переключения иконки модификатор close -->
           <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
-          <!--для переключения иконки модификатор open -->
-          <div class="main-nav__wrapper main-nav__wrapper--open">
-            <ul class="main-nav__list site-list">
+          <!--для убирания убрать open -->
+            <ul class="main-nav__list main-nav__list--open site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html">Вязание на заказ</a>
               </li>
-              <li class="site-list__item site-list__item--addon">
-                <a class="site-list__link" href="#">Новое поступление</a>
-              </li>
-              <li class="site-list__item site-list__item--addon">
-                <a class="site-list__link" href="#">Распродажа</a>
-              </li>
             </ul>
-            <ul class="main-nav__list user-list">
+            <ul class="main-nav__list main-nav__list--open user-list">
               <li class="user-list__item user-list__item--search">
                 <a class="user-list__link" href="#">Поиск по сайту</a>
               </li>
               <li class="user-list__item user-list__item--cart">
                 <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <ul class="addon-list">
+              <li class="addon-list__item">
+                <a class="addon-list__link" href="#">Новое поступление</a>
+              </li>
+              <li class="addon-list__item">
+                <a class="addon-list__link" href="#">Распродажа</a>
               </li>
             </ul>
           </div>
