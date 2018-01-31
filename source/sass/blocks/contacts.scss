@@ -2,14 +2,84 @@
   margin-bottom: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 455px;
+    width: 1050px;
+    margin: 0 auto 55px auto;
+
+
+    .container {
+      max-width: 525px;
+      padding: 0;
+      order:0;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__content {
+    padding-left: 175px;
+    flex-direction: column;
+    max-width: 350px;
+  }
+}
+
 .contacts__title {
+  margin: 0;
+  padding: 25px 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    flex-basis: 100%;
+    font-size: 43px;
+    line-height: 50px;
+    background: url("../img/icon-flag.svg") no-repeat 100% 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__title {
+    margin-left: -175px;
+    margin-top: 60px;
+    padding-left: 175px;
+
+    background-position: 60px 0;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__title {
+    max-width: 525px;
+  }
+}
 .contacts__map {
   position: relative;
+  text-align: center;
+  background-color: $light-grey;
 
   width: 100%;
   margin-bottom: 40px;
@@ -27,11 +97,41 @@
     height: 100px;
     margin: auto;
 
-    background: url("../img/icon-map-pin.svg") no-repeat 0 0;
+    background: url("../img/icon-map-pin.svg") no-repeat 50% 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map {
+    max-width: 525px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map {
+    order: 3;
   }
 }
 
 .contacts__img {
-  width: 100%;
-  height: auto;
+  width: 320px;
+  max-height: 460px;
+}
+
+.contacts__button {
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__button {
+    order: 1;
+  }
 }

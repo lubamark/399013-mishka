@@ -1,5 +1,11 @@
 .products {
   width: 100%;
+  margin-bottom: 30px;
+
+  &:hover {
+    margin-bottom: 25px;
+  }
+
 }
 
 @media (min-width: $tablet-width) {

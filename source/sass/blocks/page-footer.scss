@@ -1,12 +1,15 @@
 .page-footer {
   background-color: $light-grey;
 
-
   & .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+}
+
+.page-footer__logo{
+  display: none;
 }
 
 .page-footer__social {

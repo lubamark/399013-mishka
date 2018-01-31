@@ -19,7 +19,6 @@
 .products-list__link {
   display: block;
   padding: 30px;
-  margin-bottom: 30px;
 
   font-size: 19px;
   line-height: 24px;
@@ -29,13 +28,11 @@
   text-decoration: none;
   cursor: pointer;
   background-color: $primary-color;
-  transition: 0.3s;
 
   &:hover,
   &:focus {
     background-color: $primary-color-hover;
     padding-bottom: 35px;
-    margin-bottom: 25px;
     transform: translateY(-5px);
   }
 
