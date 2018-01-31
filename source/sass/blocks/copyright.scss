@@ -8,6 +8,13 @@
   border-top: 1px solid $middle-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .copyright {
+    border: none;
+    margin: 0;
+  }
+}
+
 .copyright__text {
   margin: 0;
   font-size: 18px;

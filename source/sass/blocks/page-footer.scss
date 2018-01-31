@@ -8,10 +8,26 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    & .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
+
 .page-footer__logo{
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__logo{
+    display: block;
+  }
+}
+
 .page-footer__social {
-  padding: 25px 0 30px 0;
+  padding: 50px 0 50px 0;
 }
