@@ -19,7 +19,11 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 175px;
+    .container{
+      padding-left: 275px;
+      padding-right: 100px;
+    }
+
   }
 }
 
