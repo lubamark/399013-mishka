@@ -30,17 +30,17 @@
 @media (min-width: $tablet-width) {
   .page-main__title {
     height: 625px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 135px;
+    padding-right: 135px;
     background-size: auto 768px;
     padding-top: 115px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-main__title {
-    max-width: 700px;
+    padding-left: 315px;
+    padding-right: 315px;
     padding-top: 150px;
   }
 }
