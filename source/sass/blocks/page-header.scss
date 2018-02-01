@@ -2,3 +2,22 @@
   border-top: 1px solid $light-grey;
   border-bottom: 1px solid $light-grey;
 }
+
+.page-header__small {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__small {
+    order: 5;
+    z-index: 10;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 113px;
+
+    font-size: 15px;
+    line-height: 24px;
+    color: $dark-grey;
+  }
+}
