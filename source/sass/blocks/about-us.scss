@@ -6,19 +6,19 @@
   .about-us {
     margin-bottom: 70px;
 
-  .container{
-    max-width: 800px;
-    margin: 0 auto;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
-    .container{
+    .container {
       max-width: 900px;
       margin: 0 auto;
-      }
+    }
   }
 }
 

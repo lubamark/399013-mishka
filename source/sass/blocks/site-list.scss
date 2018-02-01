@@ -17,7 +17,6 @@
   .site-list {
     flex-basis: 420px;
     order: 0;
-
   }
 }
 
@@ -50,22 +49,9 @@
       padding-left: 35px;
       width: 235px;
       border-left: $light-border;
-       }
+    }
   }
 }
-
-
-//
-//     &:nth-child(2) {
-//       border-left: $light-border;
-//     }
-//
-//     &:nth-child(3 + n) {
-//       display: block;
-//       font-size: 15px;
-//     }
-//   }
-// }
 
 .site-list__link {
   @include black-link;
@@ -78,9 +64,3 @@
     padding: 0;
   }
 }
-//
-// @media (min-width: $desktop-width) {
-//   .site-list__link {
-//     padding: 28px 0;
-//   }
-// }

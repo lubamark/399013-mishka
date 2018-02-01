@@ -1,6 +1,6 @@
 .video {
   margin-bottom: 60px;
-  }
+}
 
 .video__card {
   @include card-shadow;
@@ -15,10 +15,10 @@
 }
 
 @media (min-width: $desktop-width) {
-    .video__card {
-      flex-wrap: wrap;
-      height: 465px;
-    }
+  .video__card {
+    flex-wrap: wrap;
+    height: 465px;
+  }
 }
 
 .video__heading-group {
@@ -81,7 +81,6 @@
 @media (min-width: $tablet-width) {
   .video__player {
     order: 0;
-
   }
 }
 
@@ -92,6 +91,7 @@
     margin-right: 35px;
   }
 }
+
 .video__description {
   padding: 0 30px;
   margin-bottom: 25px;
