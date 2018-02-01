@@ -1,5 +1,5 @@
 .order-form {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .order-form__fieldset {
@@ -8,8 +8,74 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .order-form__fieldset {
+    padding: 50px 0;
+    margin: 0;
+
+    &:nth-of-type(2n) {
+      background-color: $light-grey;
+    }
+
+    &--radio {
+      height: 215px;
+    }
+
+    .container {
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+      max-height: 310px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__column-group {
+    display: flex;
+    flex-basis: 500px;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .order-form__group {
+      flex-basis: 100%;
+    }
+  }
+
+  .order-form__row-group {
+    display: flex;
+    flex-basis: 500px;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 205px;
+
+    .order-form__group {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__row-group {
+    .order-form__group {
+      max-width: 265px;
+    }
+  }
+}
+
 .order-form__group {
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__group {
+    flex-basis: 25%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+  }
 }
 
 .order-form__legend {
@@ -33,6 +99,25 @@
     width: 30px;
     height: 1px;
     background-color: $primary-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__legend {
+    height: 100%;
+    width: 175px;
+    flex-shrink: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__legend {
+    display: inline-block;
+    text-align: center;
   }
 }
 
@@ -74,6 +159,7 @@
 
   display: block;
   margin-bottom: 20px;
+  margin-right: 25px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -122,6 +208,7 @@
 
   border: none;
   border-bottom: 2px solid black;
+  background-color: transparent;
 
   &:focus,
   &:hover {
@@ -130,20 +217,55 @@
 
   &--textarea {
     padding: 15px;
-    border: 2px solid $black;
+    border: 2px solid $dark-grey;
   }
 
   &::placeholder {
     color: $dark-grey;
   }
+
+  &:placeholder {
+    color: $dark-grey;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .order-form__submit-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .order-form__caption {
+  display: block;
   font-size: 14px;
   line-height: 16px;
   color: $dark-grey;
+  margin-bottom: 30px;
 }
 
-.order-form_submit {
+@media (min-width: $tablet-width) {
+  .order-form__caption {
+    order: 1;
+    margin-bottom: 0;
+  }
+}
+
+.order-form__submit {
   width: 100%;
+  max-width: 230px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__submit {
+    order: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__submit {
+    margin-left: 175px;
+  }
 }
