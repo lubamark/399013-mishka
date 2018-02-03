@@ -4,6 +4,10 @@
   color: $dark-grey;
 }
 
+@mixin simple-text-tablet {
+  font-size: 17px;
+}
+
 @mixin icon-condition($color) {
   path {
     fill: $color;

@@ -2,13 +2,55 @@
   margin-bottom: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .reviews {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      padding-top: 80px;
+      padding-bottom: 40px;
+
+      background: url("../img/review@1x.jpg") no-repeat 0 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .container {
+      padding-left: 175px;
+      padding-right: 0;
+    }
+  }
+}
+
 .reviews__title {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    order: 0;
+    max-width: 200px;
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__item {
   margin: 0 0 30px 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    order: 2;
+  }
 }
 
 .reviews__content {
@@ -20,12 +62,32 @@
   color: $dark-grey;
 }
 
-.reviews__author {
+@media (min-width: $tablet-width) {
+  .reviews__content {
+    margin: 0 0 55px 0;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__author {
+    order: 3;
+  }
+}
+
+.reviews__name {
   margin: 0 0 5px 0;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__name {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .reviews__nickname {
@@ -35,10 +97,24 @@
   @include simple-text;
 }
 
+@media (min-width: $tablet-width) {
+  .reviews__nickname {
+    @include simple-text-tablet;
+  }
+}
+
 .reviews__toggles {
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__toggles {
+    order: 4;
+    height: 60px;
+    width: 175px;
+  }
 }
 
 .reviews__toggle {
@@ -62,6 +138,19 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .reviews__toggle {
+    border: none;
+  }
+}
+
 .reviews__button {
   margin-bottom: 40px;
+  min-width: 175px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__button {
+    order: 1;
+  }
 }

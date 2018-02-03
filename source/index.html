@@ -10,36 +10,44 @@
     <header class="page-header">
       <div class="container container--header">
         <nav class="main-nav">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-          </a>
+          <div class="main-nav__logo">
+            <a class="main-nav__link">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+            </a>
+          </div>
           <!--для переключения иконки модификатор close -->
           <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/закрыть меню</span> </button>
-          <!--для переключения иконки модификатор open -->
-          <div class="main-nav__wrapper main-nav__wrapper--open">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-<!--если мы вставляем иконки контентом, то мы просто копируем код и делаем класс svg и стилизуем: абсолютное позиционирование, ховер, нажатие, мы вставляем их в <a></a>?-->
-              <li class="user-list__item user-list__item--search">
-                <a class="user-list__link" href="#">Поиск по сайту</a>
-              </li>
-              <li class="user-list__item user-list__item--cart">
-                <a class="user-list__link" href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </div>
+          <!--для убирания убрать open -->
+          <ul class="main-nav__list main-nav__list--open site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--open user-list">
+            <li class="user-list__item user-list__item--search">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item user-list__item--cart">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="addon-list">
+            <li class="addon-list__item">
+              <a class="addon-list__link" href="#">Новое поступление</a>
+            </li>
+            <li class="addon-list__item">
+                <a class="addon-list__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <small class="page-header__small">Бесплатная доставка по России</small>
         </nav>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title headline">Милые штуки ручной работы для дома</h1>
+          <h1 class="page-main__title headline">Милые штуки ручной работы для дома</h1>
       <section class="products">
         <h2 class="visually-hidden">Виды товаров</h2>
         <ul class="products-list">
@@ -53,26 +61,30 @@
       </section>
       <section class="week-product">
         <div class="container">
-          <h2 class="week-product__title title">Вязаные корзинки</h2>
-          <h3 class="week-product__subtitle">Товар недели</h3>
-          <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="week-product__table">
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <img class="week-product__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Внешний вид корзинок">
-          <p class="week-product__price">Цена: 990 рублей</p>
-          <a class="button week-product__button">Заказать</a>
+          <div class="week-product_header">
+            <h2 class="week-product__title title">Вязаные корзинки</h2>
+            <h3 class="week-product__subtitle">Товар недели</h3>
+          </div>
+          <div class="week-product__content">
+            <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="week-product__table">
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+            <img class="week-product__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Внешний вид корзинок">
+            <p class="week-product__price">Цена: 990 рублей</p>
+            <a class="button week-product__button">Заказать</a>
+          </div>
         </div>
       </section>
       <section class="about-us">
@@ -108,13 +120,13 @@
           <h2 class="reviews__title title">Отзывы</h2>
           <blockquote class="reviews__item">
             <p class="reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <footer>
-              <cite class="reviews__author">Анастасия Красильникова</cite>
-              <p class="reviews__nickname">@misssssiskras</p>
-            </footer>
           </blockquote>
+          <div class="reviews__author">
+            <p class="reviews__name">Анастасия Красильникова</p>
+            <p class="reviews__nickname">@misssssiskras</p>
+          </div>
           <div class="reviews__toggles">
-          <!--потом уберем-->
+          <!--потом уберем и поставим графику как надо-->
             <button class="reviews__toggle reviews__toggle--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
             <button class="reviews__toggle reviews__toggle--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </div>
@@ -131,20 +143,23 @@
             </div>
             <div class="contacts-item">
               <div class="contacts-item__label">адрес:</div>
-              <div class="contacts-item__value">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д. 19/8, офис 101</div>
+              <div class="contacts-item__value">г. Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8, офис 101</div>
             </div>
           </div>
         </div>
         <div class="contacts__map" id="map">
           <img class="contacts__img" src="img/map-mobile@1x.jpg" width="320" height="460" alt="Магазин на карте">
         </div>
-        <div class="container">
-          <a class="button contacts__button" href="#">Напишите нам</a>
-        </div>
+        <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container">
+        <div class="page-footer__logo">
+          <a>
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="102" height="36" alt="Магазин «Мишка»">
+          </a>
+        </div>
         <ul class="social-list page-footer__social">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--instagram" href="#">
@@ -187,9 +202,9 @@
         </div>
       </div>
     </footer>
-<!--чтобы высветлить фон, нам нужно секции задать размер 100% и бэкграунд,  а внутри добавить само окно и вот эти все свойства ему добавлять, а не как сейчас? или мы добавим в js прозрачность для body ghb при открытии? -->
+<!--чтобы высветлить фон, нам нужно секции задать размер 100% и бэкграунд,  а внутри добавить само окно и вот эти все свойства ему добавлять, а не как сейчас? или мы добавим в js прозрачность для body ghb при открытии? модификатор show-add-->
     <section class="modal modal-add">
-      <h2 class="modal-add__titile title">Добавить в&nbsp;корзину</h2>
+      <h2 class="modal-add__titile">Добавить в&nbsp;корзину</h2>
       <form class="add-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="add-form__fieldset">
           <legend class="add-form__legend">Выберите размер:</legend>
@@ -201,7 +216,6 @@
             <input class="add-form__radio visually-hidden" id="size-l" type="radio" name="size" value="l">
             <label class="add-form__label" for="size-l">L</label>
           </div>
-
         </fieldset>
         <button class="button add-form__submit" type="submit">Добавить</button>
       </form>

@@ -4,14 +4,70 @@
   padding: 0;
 }
 
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    display: flex;
+  }
+}
+
 .catalog-list__item {
   @include card-shadow;
   margin-bottom: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-list__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 335px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list__item {
+    flex-basis: 30%;
+    flex-wrap: nowrap;
+    height: auto;
+    max-height: 660px;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .catalog-list__picture img {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list__picture {
+    flex-basis: 100%;
+    display: block;
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list__picture {
+    width: 100%;
+    flex-basis: 70%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .catalog-list__title {
@@ -22,13 +78,32 @@
   font-weight: 700;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-list__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .catalog-list__link {
   @include black-link;
 }
 
 .catalog-list__content-group {
   margin: 0 28px;
-  border-bottom: $light-border;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list__content-group {
+    width: 46%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list__content-group {
+    width: auto;
+    flex-shrink: 1;
+  }
 }
 
 .catalog-list__description {
@@ -38,10 +113,32 @@
   color: $dark-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-list__description {
+    @include simple-text;
+  }
+}
+
 .catalog-list__order-group {
   display: flex;
   justify-content: space-between;
-  padding: 25px 28px;
+  padding: 25px 0;
+  margin: 0 28px;
+  border-top: $light-border;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-list__order-group {
+    width: 43%;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-list__order-group {
+    width: auto;
+    margin-top: 30px;
+  }
 }
 
 .catalog-list__price {
