@@ -3,14 +3,14 @@
 
   @include simple-text;
   margin-bottom: 30px;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts-item {
+  @media (min-width: $tablet-width) {
     @include simple-text-tablet;
     flex-basis: 50%;
   }
 }
+
+
 
 .contacts-item__label {
   min-width: 75px;
@@ -34,10 +34,8 @@
     color: $primary-color-opacify;
     border-color: $primary-color-opacify;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .contacts-item__link {
+  @media (min-width: $tablet-width) {
     @include simple-text-tablet;
   }
 }

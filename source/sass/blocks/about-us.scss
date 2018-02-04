@@ -2,16 +2,12 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
-
     .container {
       max-width: 800px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
-
     .container {
     max-width: 900px;
     margin: 0 auto;
