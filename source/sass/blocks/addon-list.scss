@@ -12,13 +12,13 @@
   }
 }
 
-  .addon-list__item {
-    min-width: 220px;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 22px 0;
-  }
+.addon-list__item {
+  min-width: 220px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 22px 0;
+}
 
-  .addon-list__link {
-    @include black-link;
+.addon-list__link {
+  @include black-link;
 }

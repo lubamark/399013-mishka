@@ -53,16 +53,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 525px;
     margin-left: -175px;
     margin-top: 60px;
     padding-left: 175px;
     background-position: 60px 0;
-  }
-}
-
-.contacts__title {
-  @media (min-width: $desktop-width) {
-    max-width: 525px;
   }
 }
 
