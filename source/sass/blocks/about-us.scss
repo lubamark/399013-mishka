@@ -1,24 +1,12 @@
 .about-us {
   margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    .container {
-      max-width: 800px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .container {
-    max-width: 900px;
-    margin: 0 auto;
-    }
-  }
 }
 
 .about-us__title {
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
   }
 }

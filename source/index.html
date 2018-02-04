@@ -226,8 +226,11 @@
         </div>
       </div>
     </footer>
-<!--чтобы высветлить фон, нам нужно секции задать размер 100% и бэкграунд,  а внутри добавить само окно и вот эти все свойства ему добавлять, а не как сейчас? или мы добавим в js прозрачность для body ghb при открытии? модификатор show-add-->
-    <section class="modal modal-add">
+<!-- модификатор show-add для враппера show
+Или теперь оставить только обертке?
+-->
+    <div class="modal__wrapper">
+      <section class="modal modal-add">
       <h2 class="modal-add__titile">Добавить в&nbsp;корзину</h2>
       <form class="add-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="add-form__fieldset">
@@ -244,5 +247,6 @@
         <button class="button add-form__submit" type="submit">Добавить</button>
       </form>
     </section>
+    </div>
   </body>
 </html>
