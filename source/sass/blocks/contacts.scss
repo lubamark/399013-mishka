@@ -1,8 +1,10 @@
 .contacts {
+  margin-top: 35px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,7 +13,7 @@
     flex-wrap: wrap;
     max-height: 455px;
     width: 1050px;
-    margin: 0 auto 55px auto;
+    margin: 70px auto 55px auto;
 
     .container {
       max-width: 525px;
