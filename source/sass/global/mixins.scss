@@ -1,11 +1,15 @@
 @mixin simple-text {
   font-size: 15px;
   line-height: 30px;
+  font-weight: 400;
   color: $dark-grey;
 }
 
 @mixin simple-text-tablet {
   font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $dark-grey;
 }
 
 @mixin icon-condition($color) {
