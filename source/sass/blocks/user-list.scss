@@ -1,56 +1,72 @@
 .user-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  @include list-reset;
 
-@media (min-width: $tablet-width) {
-  .user-list {
-    order: 1;
-    flex-basis: 55%;
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
+  @media (min-width: $tablet-width) {
+      order: 1;
+      flex-basis: 55%;
+      margin-left: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .user-list {
-    justify-content: flex-end;
-    flex-basis: 420px;
-    order: 2;
+  @media (min-width: $desktop-width) {
+      flex-basis: 420px;
+      order: 2;
   }
 }
 
 .user-list__item {
   border-top: $light-border;
-}
 
-@media (min-width: $tablet-width) {
-  .user-list__item {
+  @media (min-width: $tablet-width) {
     border-left: $light-border;
     border-top: none;
-    padding: 28px 0 28px 85px;
+    padding: 0;
+  }
+}
+
+
+
+.user-list__link {
+  @include black-link;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  padding: 28px 25px 28px 30px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  & svg {
+    @include icon-condition($light-grey);
+    fill: $light-grey;
+  }
+
+  &--search svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 26px;
+  }
+
+  &--cart svg {
+    width: 21px;
+    height: 18px;
+    margin-right: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 33px 35px;
 
     &--search {
       width: 85px;
       height: 90px;
       overflow: hidden;
+
+      svg {
+        margin-right: 35px;
+      }
     }
   }
-}
 
-.user-list__link {
-  @include black-link;
-  display: block;
-  padding: 28px 25px 28px 70px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-@media (min-width: $tablet-width) {
-  .user-list__link {
-    padding: 0;
-  }
 }

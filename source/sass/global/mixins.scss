@@ -49,3 +49,9 @@
     box-shadow: 0 3px 5px 0 hsla(0, 0, 0, 0.1);
   }
 }
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
