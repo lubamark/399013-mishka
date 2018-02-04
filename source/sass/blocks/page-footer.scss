@@ -6,11 +6,9 @@
     flex-direction: column;
     justify-content: center;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .page-footer {
-    & .container {
+  @media (min-width: $tablet-width) {
+    .container {
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
@@ -20,10 +18,8 @@
 
 .page-footer__logo {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .page-footer__logo {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
