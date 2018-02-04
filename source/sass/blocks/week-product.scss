@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 }
 
@@ -25,6 +25,7 @@
       flex-direction: row-reverse;
       justify-content: flex-end;
       margin-bottom: -100px;
+      margin-top: 40px;
   }
 }
 

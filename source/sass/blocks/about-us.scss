@@ -1,33 +1,28 @@
 .about-us {
   margin-bottom: 40px;
-}
 
-@media (min-width: $tablet-width) {
-  .about-us {
+  @media (min-width: $tablet-width) {
     margin-bottom: 70px;
 
     .container {
       max-width: 800px;
-      margin: 0 auto;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .about-us {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+
     .container {
-      max-width: 900px;
-      margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto;
     }
   }
 }
 
 .about-us__title {
   margin-bottom: 10px;
-}
 
-@media (min-width: $tablet-width) {
-  .about-us__title {
+  @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
 }
