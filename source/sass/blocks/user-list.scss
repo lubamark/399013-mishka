@@ -39,9 +39,18 @@
   font-weight: 700;
 
   & svg {
-    @include icon-condition($light-grey);
     fill: $light-grey;
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $primary-color;
+  }
+
+  &:active svg {
+    fill: $primary-color-opacify;
+  }
+
 
   &--search svg {
     width: 18px;
