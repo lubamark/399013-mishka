@@ -6,10 +6,8 @@
   margin: 0 0 20px 0;
   padding: 0;
   border: none;
-}
 
-@media (min-width: $tablet-width) {
-  .order-form__fieldset {
+  @media (min-width: $tablet-width) {
     padding: 50px 0;
     margin: 0;
 
@@ -30,8 +28,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .order-form__column-group {
+.order-form__column-group {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-basis: 500px;
     flex-grow: 1;
@@ -42,8 +40,10 @@
       flex-basis: 100%;
     }
   }
+}
 
-  .order-form__row-group {
+.order-form__row-group {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-basis: 500px;
     flex-grow: 1;
@@ -53,24 +53,18 @@
 
     .order-form__group {
       flex-basis: 50%;
-    }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .order-form__row-group {
-    .order-form__group {
-      max-width: 265px;
+      @media (min-width: $desktop-width) {
+        width: 265px;
+      }
     }
   }
 }
 
 .order-form__group {
   margin-bottom: 25px;
-}
 
-@media (min-width: $tablet-width) {
-  .order-form__group {
+  @media (min-width: $tablet-width) {
     flex-basis: 25%;
     flex-shrink: 1;
     flex-grow: 1;
@@ -100,10 +94,8 @@
     height: 1px;
     background-color: $primary-color;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .order-form__legend {
+  @media (min-width: $tablet-width) {
     height: 100%;
     width: 175px;
     flex-shrink: 0;
@@ -112,10 +104,8 @@
       display: none;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .order-form__legend {
+  @media (min-width: $desktop-width) {
     display: inline-block;
     text-align: center;
   }
@@ -229,9 +219,8 @@
   }
 }
 
-
-@media (min-width: $tablet-width) {
-  .order-form__submit-group {
+.order-form__submit-group {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -244,10 +233,8 @@
   line-height: 16px;
   color: $dark-grey;
   margin-bottom: 30px;
-}
 
-@media (min-width: $tablet-width) {
-  .order-form__caption {
+  @media (min-width: $tablet-width) {
     order: 1;
     margin-bottom: 0;
   }
@@ -255,17 +242,13 @@
 
 .order-form__submit {
   width: 100%;
-  max-width: 230px;
-}
 
-@media (min-width: $tablet-width) {
-  .order-form__submit {
+  @media (min-width: $tablet-width) {
     order: 0;
+    width: 230px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .order-form__submit {
+  @media (min-width: $desktop-width) {
     margin-left: 175px;
   }
 }

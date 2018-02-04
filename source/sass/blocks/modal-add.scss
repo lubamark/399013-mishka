@@ -15,10 +15,8 @@
   background-color: white;
   border: $light-border;
   box-shadow: 0 5px 10px 0 hsla(0, 0, 0, 0.25);
-}
 
-@media (min-width: $tablet-width) {
-  .modal-add {
+  @media (min-width: $tablet-width) {
     padding: 30px 110px 45px 110px;
   }
 }
@@ -31,10 +29,8 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .modal-add__titile {
+  @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 57px;
   }
