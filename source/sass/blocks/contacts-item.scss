@@ -6,7 +6,12 @@
 
   @media (min-width: $tablet-width) {
     @include simple-text-tablet;
-    flex-basis: 50%;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+    align-self: flex-start;
   }
 }
 
@@ -21,6 +26,7 @@
 .contacts-item__link {
   @include simple-text;
   text-decoration: none;
+  height: 35px;
   border-bottom: 1px solid $primary-color;
 
   &:hover,
