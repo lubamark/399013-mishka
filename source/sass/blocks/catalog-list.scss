@@ -23,8 +23,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: 30%;
     flex-wrap: nowrap;
-    height: auto;
-    max-height: 660px;
+    height: 660px;
     margin-right: 50px;
 
     &:last-child {
@@ -34,6 +33,7 @@
 }
 
 .catalog-list__picture {
+  background-color: $light-grey;
   img {
     width: 100%;
     height: auto;
@@ -53,7 +53,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    flex-basis: 70%;
+    height: 465px;
 
     img {
       width: 100%;
