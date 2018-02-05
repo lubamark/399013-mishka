@@ -8,7 +8,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0;
+    padding: 45px 0 30px 0;
     margin: 0;
 
     &:nth-of-type(2n) {
@@ -16,12 +16,12 @@
     }
 
     &--radio {
-      height: 215px;
+      height: 180px;
     }
 
     .container {
       display: flex;
-      align-items: baseline;
+      align-items: flex-start;
       flex-direction: row;
       max-height: 310px;
     }
@@ -62,13 +62,18 @@
 }
 
 .order-form__group {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 25%;
     flex-shrink: 1;
     flex-grow: 1;
     display: flex;
+    min-height: 40px;
+
+    &--input {
+      min-height: 50px;
+    }
   }
 }
 
@@ -99,6 +104,7 @@
     height: 100%;
     width: 175px;
     flex-shrink: 0;
+    padding-top: 10px;
 
     &::after {
       display: none;
@@ -148,7 +154,7 @@
   position: relative;
 
   display: block;
-  margin-bottom: 20px;
+  padding-top: 10px;
   margin-right: 25px;
   font-size: 17px;
   line-height: 18px;
@@ -157,9 +163,9 @@
 
   &--radio,
   &--checkbox {
-    padding-top: 10px;
+
     padding-left: 60px;
-    min-height: 40px;
+    height: 40px;
 
     &::before {
       content: "";
@@ -183,13 +189,13 @@
   }
 
   &:active::before {
-    border-color: $light-grey;
+    border-color: $middle-grey;
   }
 }
 
 .order-form__input {
   width: 100%;
-  padding-bottom: 20px;
+  padding: 10px 0 15px 0;
 
   font-family: inherit;
   font-size: 17px;
@@ -211,11 +217,11 @@
   }
 
   &::placeholder {
-    color: $dark-grey;
+    color: $middle-grey;
   }
 
   &:placeholder {
-    color: $dark-grey;
+    color: $middle-grey;
   }
 }
 
