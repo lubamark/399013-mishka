@@ -1,14 +1,24 @@
 .page-header {
   border-top: 1px solid $light-grey;
   border-bottom: 1px solid $light-grey;
+
+  .container {
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 100px;
+    }
+  }
 }
 
 .page-header__small {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header__small {
+  @media (min-width: $tablet-width) {
     order: 5;
     z-index: 10;
     display: block;

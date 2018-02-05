@@ -1,11 +1,15 @@
 @mixin simple-text {
   font-size: 15px;
   line-height: 30px;
+  font-weight: 400;
   color: $dark-grey;
 }
 
 @mixin simple-text-tablet {
   font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $dark-grey;
 }
 
 @mixin icon-condition($color) {
@@ -48,4 +52,10 @@
   &:active {
     box-shadow: 0 3px 5px 0 hsla(0, 0, 0, 0.1);
   }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

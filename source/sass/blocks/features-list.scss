@@ -1,15 +1,16 @@
 .features-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  @include list-reset;
 
-@media (min-width: $tablet-width) {
-  .features-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 430px;
+    height: 465px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
 
@@ -36,16 +37,33 @@
   &--ecologic::before {
     background-image: url("../img/icon-feature-flower.svg");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .features-list__item {
-    width: 50%;
-    padding-right: 3%;
+  &--style::before {
+    background-image: url("../img/icon-feature-money.svg");
+  }
 
-    &:nth-child(4 + n) {
-      margin-right: 0;
-      margin-bottom: 30px;
-    }
+  &--like::before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade::before {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--local::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--present::before {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 335px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 }

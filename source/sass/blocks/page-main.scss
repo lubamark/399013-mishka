@@ -1,28 +1,21 @@
-@media (min-width: $tablet-width) {
-  .page-main {
-    position: relative;
-  }
-}
-
 .page-main__title {
   height: 285px;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 20%;
-}
+  padding: 70px 40px 115px 40px;
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
 
-@media (min-width: $tablet-width) {
-  .page-main__title {
+  @media (min-width: $tablet-width) {
     height: 625px;
+    padding: 155px 140px 470px 140px;
     padding-left: 135px;
     padding-right: 135px;
     background-size: auto 768px;
     padding-top: 115px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-main__title {
-    padding-left: 315px;
-    padding-right: 315px;
-    padding-top: 150px;
+  @media (min-width: $desktop-width) {
+    padding: 155px 325px 470px 325px;
   }
 }

@@ -1,20 +1,22 @@
 $tablet-width: 768px;
 $desktop-width: 1250px;
 
-$primary-color: hsla(168, 54%, 60%, 1);
-$primary-color-hover: hsla(168, 60%, 59%, 1);
-$primary-color-opacify: hsla(168, 54%, 60%, 0.3);
+$primary-color: #63d1bb;
+$primary-color-hover: #59d5bc;
+$primary-color-opacify: rgba(#63d1bb, 0.3);
 
-$primary-dark-color: hsla(171, 48%, 55%, 1);
-$primary-dark-color-hover: hsla(171, 50%, 52%, 1);
+$primary-dark-color: #63c8b8;
+$primary-dark-color-hover: #67ccbc;
+$primary-dark-color-active: #69cdbd;
+$primary-very-dark-color: #149080;
 
-$white: hsla(0, 0, 100%, 1);
-$white-hover: hsla(0, 0, 100%, 0.3);
+$white: #ffffff;
+$white-hover: rgba(#ffffff, 0.3);
 
-$light-grey: hsla(0, 0, 90%, 1);
-$middle-grey: hsla(0, 0, 70%, 1);
-$middle-dark-grey: hsla(0, 0, 40%, 1);
-$dark-grey: hsla(0, 0, 27%, 1);
-$black: hsla(0, 0, 0, 1);
+$light-grey: #f1f1f1;
+$middle-grey: #c7c7c7;
+$middle-dark-grey: #666666;
+$dark-grey: #444444;
+$black: #000000;
 
 $light-border: 1px solid $light-grey;

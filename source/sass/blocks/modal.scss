@@ -2,6 +2,22 @@
   display: none;
 
   &--show-add {
-    display: fixed;
+    display: block;
+  }
+}
+
+.modal__wrapper {
+  display: none;
+
+  &--show {
+    display: flex;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
