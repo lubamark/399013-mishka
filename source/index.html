@@ -111,7 +111,13 @@
                 <td>15 см</td>
               </tr>
             </table>
-            <img class="week-product__photo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Внешний вид корзинок">
+            <div class="week-product__photo">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img  src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Внешний вид корзинок">
+              </picture>
+            </div>
             <p class="week-product__price">Цена: 990 рублей</p>
             <a class="button week-product__button">Заказать</a>
           </div>
