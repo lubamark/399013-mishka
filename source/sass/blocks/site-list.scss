@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 420px;
+    max-width: 380px;
     order: 0;
   }
 }
