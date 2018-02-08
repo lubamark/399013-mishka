@@ -34,8 +34,8 @@
   }
 
   &:active {
-    color: $primary-color-opacify;
-    border-color: $primary-color-opacify;
+    color: $primary-color-opacity;
+    border-color: $primary-color-opacity;
   }
 
   @media (min-width: $tablet-width) {

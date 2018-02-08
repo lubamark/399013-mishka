@@ -19,6 +19,14 @@ body {
   color: $black;
 }
 
+img {
+  display: block;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

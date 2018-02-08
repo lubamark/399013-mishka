@@ -64,6 +64,7 @@
 .video__player {
   position: relative;
   background-color: $light-grey;
+  margin-bottom: 30px;
 
   &::before {
     content: "";
@@ -91,15 +92,11 @@
     opacity: 0.3;
   }
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   @media (min-width: $tablet-width) {
     order: 0;
     height: 455px;
     overflow: hidden;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,7 +122,7 @@
 }
 
 .video__button {
-  margin: 0 35px;
+  margin: 0 35px 35px 35px;
 
   @media (min-width: $tablet-width) {
     order: 3;

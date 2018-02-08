@@ -23,6 +23,15 @@
     height: auto;
   }
 
+  &[href$=".html"]:hover,
+  &[href$=".html"]:focus {
+    opacity: 0.6;
+  }
+
+  &[href$=".html"]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 20px 0;
     justify-content: flex-start;
@@ -78,6 +87,15 @@
 
   &--close {
     background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

@@ -36,32 +36,17 @@
 .catalog-list__picture {
   background-color: $light-grey;
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   @media (min-width: $tablet-width) {
     display: block;
     width: 50%;
     overflow: hidden;
     height: 100%;
-
-    img {
-      height: 100%;
-      width: auto;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     height: 465px;
     flex-shrink: 0;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
 }
 
