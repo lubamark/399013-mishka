@@ -1,9 +1,11 @@
 $tablet-width: 768px;
 $desktop-width: 1250px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 $primary-color: #63d1bb;
 $primary-color-hover: #59d5bc;
-$primary-color-opacify: rgba(#63d1bb, 0.3);
+$primary-color-opacity: rgba(#63d1bb, 0.3);
 
 $primary-dark-color: #63c8b8;
 $primary-dark-color-hover: #67ccbc;
@@ -14,6 +16,7 @@ $white: #ffffff;
 $white-hover: rgba(#ffffff, 0.3);
 
 $light-grey: #f1f1f1;
+$middle-light-grey: #b2b2b2;
 $middle-grey: #c7c7c7;
 $middle-dark-grey: #666666;
 $dark-grey: #444444;

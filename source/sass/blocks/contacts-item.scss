@@ -26,7 +26,6 @@
 .contacts-item__link {
   @include simple-text;
   text-decoration: none;
-  height: 35px;
   border-bottom: 1px solid $primary-color;
 
   &:hover,
@@ -35,8 +34,8 @@
   }
 
   &:active {
-    color: $primary-color-opacify;
-    border-color: $primary-color-opacify;
+    color: $primary-color-opacity;
+    border-color: $primary-color-opacity;
   }
 
   @media (min-width: $tablet-width) {

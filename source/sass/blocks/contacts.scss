@@ -85,6 +85,7 @@
   background-color: $light-grey;
 
   margin: 0 -30px 40px -30px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -111,11 +112,6 @@
     margin: 0;
     order: 3;
   }
-}
-
-.contacts__img {
-  width: 320px;
-  max-height: 460px;
 }
 
 .contacts__button {

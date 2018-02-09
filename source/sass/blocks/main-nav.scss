@@ -11,20 +11,52 @@
 }
 
 .main-nav__logo {
-  padding: 22px 0;
+  padding: 23px 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 86px;
+    height: auto;
+  }
+
+  &[href$=".html"]:hover,
+  &[href$=".html"]:focus {
+    opacity: 0.6;
+  }
+
+  &[href$=".html"]:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
+    padding: 20px 0;
     justify-content: flex-start;
     margin-right: auto;
+    max-width: 150px;
+
+    img {
+      width: 114px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    padding: 5px 0;
     order: 1;
     margin-left: auto;
+
+    img {
+      width: 150px;
+    }
   }
+}
+
+.main-nav__logo-image {
+  height: 100%;
+  width: auto;
 }
 
 .main-nav__list {
@@ -55,6 +87,15 @@
 
   &--close {
     background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

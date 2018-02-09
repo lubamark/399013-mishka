@@ -5,7 +5,7 @@
 .video__card {
   @include card-shadow;
   border: $light-border;
-  padding: 30px 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -22,7 +22,7 @@
 .video__heading-group {
   display: flex;
   align-items: center;
-  padding: 0 30px 25px 45px;
+  padding: 35px 30px 25px 45px;
 
   path {
     fill: $primary-color;
@@ -63,6 +63,8 @@
 
 .video__player {
   position: relative;
+  background-color: $light-grey;
+  margin-bottom: 30px;
 
   &::before {
     content: "";
@@ -90,20 +92,11 @@
     opacity: 0.3;
   }
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   @media (min-width: $tablet-width) {
     order: 0;
     height: 455px;
     overflow: hidden;
-
-    img {
-      width: auto;
-      height: 100%;
-    }
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,7 +122,7 @@
 }
 
 .video__button {
-  margin: 0 35px;
+  margin: 0 35px 35px 35px;
 
   @media (min-width: $tablet-width) {
     order: 3;

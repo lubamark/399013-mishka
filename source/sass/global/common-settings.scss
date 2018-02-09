@@ -13,10 +13,18 @@ body {
   padding: 0;
   min-width: 320px;
 
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: $black;
+}
+
+img {
+  display: block;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .visually-hidden {
