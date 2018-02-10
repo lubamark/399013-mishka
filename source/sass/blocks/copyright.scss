@@ -22,16 +22,16 @@
 }
 
 .copyright__link {
-  path {
+  svg {
     fill: $primary-color;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $primary-dark-color;
   }
 
-  &:active path {
+  &:active svg {
     fill: $primary-color-opacity;
   }
 }

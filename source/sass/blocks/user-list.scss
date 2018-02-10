@@ -36,9 +36,7 @@
   line-height: 24px;
   font-weight: 700;
 
-  & svg {
-    @include icon-condition($light-grey);
-  }
+  @include icon-condition($light-grey);
 
   &--search svg {
     width: 18px;

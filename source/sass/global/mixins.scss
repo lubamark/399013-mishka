@@ -13,16 +13,16 @@
 }
 
 @mixin icon-condition($color) {
-  path {
+  svg {
     fill: $color;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $primary-color;
   }
 
-  &:active path {
+  &:active svg {
     fill: $primary-color-opacity;
   }
 }
