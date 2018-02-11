@@ -11,12 +11,11 @@
       width: 100%;
       height: 20px;
       z-index: 20;
-      background: url("../img/bg-zigzag-fill.svg") repeat-x 5px 5px;
-      background-size: auto 25px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 5px;
+      background-size: 100%;
 
       @media (min-width: $desktop-width) {
         height: 25px;
-        background-size: auto 36px;
       }
     }
   }

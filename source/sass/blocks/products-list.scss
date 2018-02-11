@@ -20,7 +20,7 @@
 .products-list__link {
   display: flex;
   justify-content: space-between;
-  padding: 27px 40px 30px 30px;
+  padding: 25px 40px 15px 30px;
 
   font-size: 19px;
   line-height: 24px;
@@ -29,6 +29,12 @@
   text-decoration: none;
   transform: translateY(0);
   transition: 0.5s;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 30px 40px 30px 35px;
+  }
 
   cursor: pointer;
   background-color: $primary-color;

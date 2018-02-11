@@ -17,7 +17,7 @@
 .features-list__item {
   position: relative;
 
-  padding: 60px 0 20px 0;
+  padding: 65px 0 18px 0;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -60,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     width: 335px;
-    padding-right: 40px;
+    padding: 65px 40px 15px 0;
     margin-bottom: 30px;
 
     font-size: 20px;
