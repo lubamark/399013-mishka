@@ -6,21 +6,18 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 3px;
       left: 0;
       width: 100%;
       height: 20px;
       z-index: 20;
       background: url("../img/bg-zigzag-fill.svg") repeat-x 5px 5px;
-      background-size: auto 26px;
-    }
-  }
+      background-size: auto 25px;
 
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      height: 25px;
-      background-size: auto 36px;
+      @media (min-width: $desktop-width) {
+        height: 25px;
+        background-size: auto 36px;
+      }
     }
   }
 
