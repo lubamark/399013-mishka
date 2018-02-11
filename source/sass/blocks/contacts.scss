@@ -83,6 +83,7 @@
   position: relative;
   text-align: center;
   background-color: $light-grey;
+  height: 460px;
 
   margin: 0 -30px 40px -30px;
   overflow: hidden;
@@ -112,6 +113,11 @@
     margin: 0;
     order: 3;
   }
+}
+
+.contacts__img {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .contacts__button {
