@@ -64,6 +64,10 @@
 .order-form__group {
   margin-bottom: 20px;
 
+  &--input {
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     flex-basis: 25%;
     flex-shrink: 1;
@@ -195,7 +199,7 @@
 
 .order-form__input {
   width: 100%;
-  padding: 10px 0 15px 0;
+  padding: 10px 0 20px 0;
 
   font-family: inherit;
   font-size: 17px;
@@ -210,9 +214,15 @@
   &:focus,
   &:hover {
     border-color: $primary-color;
+
+    & ~ .order-form__icon {
+      fill: $primary-color;
+    }
   }
 
   &--textarea {
+    min-width: 260px;
+    min-height: 100px;
     padding: 15px;
     border: 2px solid $dark-grey;
   }
@@ -220,10 +230,13 @@
   &::placeholder {
     color: $middle-grey;
   }
+}
 
-  &:placeholder {
-    color: $middle-grey;
-  }
+.order-form__icon {
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  fill: $middle-grey;
 }
 
 .order-form__submit-group {
