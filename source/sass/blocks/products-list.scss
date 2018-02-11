@@ -14,7 +14,6 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    height: 125px;
   }
 }
 
@@ -28,6 +27,8 @@
   font-weight: 700;
   color: white;
   text-decoration: none;
+  transform: translateY(0);
+  transition: 0.5s;
 
   cursor: pointer;
   background-color: $primary-color;
@@ -43,7 +44,6 @@
 
     @media (min-width: $tablet-width) {
       transform: translateY(-5px);
-      padding-bottom: 35px;
     }
 
     & svg {
