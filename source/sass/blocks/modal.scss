@@ -1,18 +1,10 @@
-.modal {
-  display: none;
-
-  &--show-add {
-    display: block;
-  }
-}
-
 .modal__wrapper {
   display: none;
 
   &--show {
     display: flex;
     position: fixed;
-    z-index: 15;
+    z-index: 20;
     top: 0;
     left: 0;
     height: 100vh;
