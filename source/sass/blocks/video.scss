@@ -15,21 +15,25 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
+    justify-content: flex-start;
     height: 455px;
+    margin-bottom: 110px;
   }
 }
 
 .video__heading-group {
   display: flex;
   align-items: center;
-  padding: 35px 30px 25px 45px;
+  padding: 25px 30px;
 
   svg {
     fill: $primary-color;
+    margin-right: 10px;
   }
 
   @media (min-width: $tablet-width) {
     order: 1;
+    padding: 30px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +41,7 @@
     align-items: flex-start;
     width: auto;
     max-width: 330px;
+    padding: 22px 50px 35px 42px;
 
     svg {
       margin: 20px 0;
@@ -64,7 +69,7 @@
 .video__player {
   position: relative;
   background-color: $light-grey;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   &::before {
     content: "";
@@ -115,13 +120,14 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
-    padding: 0 43px;
-    margin: 0 0 40px 0;
+    padding: 0 40px;
+    margin: 0 0 37px 0;
+
   }
 
   @media (min-width: $desktop-width) {
     max-width: 330px;
-    margin: 0 0 50px 0;
+    margin: 0 0 45px 0;
   }
 }
 
@@ -135,5 +141,6 @@
 
   @media (min-width: $desktop-width) {
     width: 230px;
+    margin-bottom: 40px;
   }
 }

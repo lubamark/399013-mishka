@@ -3,7 +3,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 78px;
     position: relative;
 
     &::after {
@@ -16,10 +16,15 @@
       z-index: 20;
       background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
       background-size: auto 15px;
+    }
+  }
 
-      @media (min-width: $desktop-width) {
-        background-size: auto 35px;
-      }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 132px;
+
+    &::after {
+      background-position: 5px 0;
+      background-size: 100%;
     }
   }
 }
@@ -31,7 +36,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 30px;
     margin-bottom: 55px;
   }
