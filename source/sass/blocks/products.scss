@@ -15,13 +15,11 @@
       background-size: auto 25px;
 
       @media (min-width: $desktop-width) {
-          height: 25px;
-          background-size: auto 36px;
+        height: 25px;
+        background-size: auto 36px;
       }
     }
   }
-
-
 
   .container {
     padding: 0;
