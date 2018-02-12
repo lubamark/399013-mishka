@@ -1,22 +1,22 @@
 .order-form {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .order-form__fieldset {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 30px 0;
+    padding: 30px 0 50px 0;
     margin: 0;
 
     &:nth-of-type(2n) {
       background-color: $light-grey;
     }
 
-    &--radio {
-      height: 180px;
+    &--name {
+      padding: 50px 0 50px 0;
     }
 
     .container {
@@ -64,8 +64,9 @@
 .order-form__group {
   margin-bottom: 20px;
 
-  &--input {
+  &--contacts {
     position: relative;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
@@ -85,13 +86,17 @@
   display: flex;
   align-items: center;
 
-  margin: 0 0 20px 0;
+  margin: 0 0 25px 0;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
 
   color: $primary-color;
+
+  &--label {
+    margin: 0 0 10px 0;
+  }
 
   &::after {
     content: "";
@@ -106,9 +111,9 @@
 
   @media (min-width: $tablet-width) {
     height: 100%;
-    width: 175px;
+    width: 167px;
     flex-shrink: 0;
-    padding-top: 10px;
+    padding-top: 20px;
 
     &::after {
       display: none;
@@ -131,26 +136,41 @@
 
 .order-form__radio {
   &:checked + .order-form__label--radio::after {
-    top: 10px;
-    left: 10px;
+    top: 12px;
+    left: 12px;
 
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: $primary-color;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+      left: 16px;
+
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
 .order-form__checkbox {
   &:checked + .order-form__label--checkbox::after {
-    top: 3px;
+    top: 10px;
     left: 13px;
-    width: 15px;
-    height: 28px;
+    width: 12px;
+    height: 21px;
     transform: rotate(45deg);
 
     border-bottom: 2px solid $dark-grey;
     border-right: 2px solid $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 19px;
+      width: 15px;
+      height: 30px;
+    }
   }
 }
 
@@ -158,18 +178,28 @@
   position: relative;
 
   display: block;
-  padding-top: 10px;
-  margin-right: 25px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+  padding-top: 5px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+
+    &--checkbox {
+      width: 240px;
+    }
+  }
 
   &--radio,
   &--checkbox {
+    padding: 10px 0 10px 50px;
+    height: 41px;
 
-    padding-left: 60px;
-    height: 40px;
+    @media (min-width: $tablet-width) {
+      padding: 15px 0 10px 80px;
+      height: 55px;
+    }
 
     &::before {
       content: "";
@@ -179,6 +209,11 @@
       width: 40px;
       height: 40px;
       border: 2px solid $dark-grey;
+
+      @media (min-width: $tablet-width) {
+        width: 52px;
+        height: 52px;
+      }
     }
   }
 
@@ -199,7 +234,7 @@
 
 .order-form__input {
   width: 100%;
-  padding: 10px 0 20px 0;
+  padding: 15px 0;
 
   font-family: inherit;
   font-size: 17px;
@@ -234,12 +269,22 @@
 
 .order-form__icon {
   position: absolute;
-  bottom: 15px;
-  right: 0;
   fill: $middle-grey;
+
+  &--tel {
+    right: 8px;
+    bottom: 15px;
+  }
+
+  &--email {
+    right: 5px;
+    bottom: 10px;
+  }
 }
 
 .order-form__submit-group {
+  margin-top: 15px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Вязание на заказ / Магазин «Мишка»</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+      body {
+        opacity: 0.8;
+        background-image: url("img/preview/mishka-form-tablet.jpg")
+      }
+</style> -->
   </head>
   <body>
     <header class="page-header">
@@ -113,7 +119,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--name">
           <div class="container">
             <h3 class="order-form__legend">ФИО</h3>
             <div class="order-form__column-group">
@@ -136,17 +142,17 @@
           <div class="container">
             <h3 class="visually-hidden">Контакты и пожелания</h3>
             <div class="order-form__column-group">
-              <div class="order-form__group order-form__group--input">
-                <label class="order-form__legend" for="tel">Тел:</label>
+              <div class="order-form__group order-form__group--contacts">
+                <label class="order-form__legend order-form__legend--label" for="tel">Тел:</label>
                 <input class="order-form__input" type="tel" name="tel" id="tel"  placeholder="+7 XXX XX XX*" required>
-                <svg class="order-form__icon" width="25" height="25">
+                <svg class="order-form__icon order-form__icon--tel" width="25" height="25">
                   <use xlink:href="img/sprite.svg#icon-phone">
                 </svg>
               </div>
-              <div class="order-form__group order-form__group--input">
-                <label class="order-form__legend" for="email">E-mail</label>
+              <div class="order-form__group order-form__group--contacts">
+                <label class="order-form__legend order-form__legend--label" for="email">E-mail</label>
                 <input class="order-form__input" type="email" name="email" id="email"  placeholder="Ваш Email*" required>
-                <svg class="order-form__icon" width="32" height="25">
+                <svg class="order-form__icon order-form__icon--email" width="32" height="32">
                   <use xlink:href="img/sprite.svg#icon-mail">
                 </svg>
               </div>
@@ -156,7 +162,7 @@
         <fieldset class="order-form__fieldset">
           <div class="container">
             <label class="order-form__legend" for="wishes">Доп</label>
-              <textarea class="order-form__input order-form__input--textarea" name="wishes" id="wishes" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
+              <textarea class="order-form__input order-form__input--textarea" name="wishes" id="wishes" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
           </div>
         </fieldset>
         <div class="container">
