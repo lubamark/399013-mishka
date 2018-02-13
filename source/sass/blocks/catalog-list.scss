@@ -14,17 +14,18 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 333px;
+    min-height: 333px;
     margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     width: 30%;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    height: 660px;
+    min-height: 660px;
     margin-right: 50px;
     margin-bottom: 25px;
 
@@ -46,13 +47,29 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    height: 465px;
-    flex-shrink: 0;
+    height: 460px;
+    flex-grow: 0;
   }
 }
 
 .catalog-list__img {
   min-width: 100%;
+}
+
+.catalog-list__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    min-height: 198px;
+    flex-grow: 1;
+  }
 }
 
 .catalog-list__title {
@@ -75,10 +92,6 @@
 .catalog-list__content-group {
   padding: 25px 28px 20px 28px;
 
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
-
   @media (min-width: $desktop-width) {
     width: auto;
     flex-shrink: 1;
@@ -95,10 +108,6 @@
   @media (min-width: $tablet-width) {
     @include simple-text;
   }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
 }
 
 .catalog-list__order-group {
@@ -108,10 +117,6 @@
   margin: 0 28px;
   border-top: $light-border;
 
-  @media (min-width: $tablet-width) {
-    width: 255px;
-    margin: auto auto 0 auto;
-  }
 }
 
 .catalog-list__price {
@@ -127,7 +132,7 @@
 }
 
 .catalog-list__button {
-  @include icon-condition($light-grey);
+  @include icon-condition($middle-light-grey);
 
   flex-basis: 30%;
   flex-grow: 1;
