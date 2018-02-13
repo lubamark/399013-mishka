@@ -2,10 +2,10 @@
   display: flex;
 
   @include simple-text;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    @include simple-text-tablet;
+    @include simple-text-17px;
     width: 50%;
   }
 
@@ -40,6 +40,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include simple-text-tablet;
+    @include simple-text-17px;
   }
 }
