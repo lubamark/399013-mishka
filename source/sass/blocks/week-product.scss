@@ -88,19 +88,40 @@
 .week-product__content {
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: flex-start;
     justify-content: space-between;
-    height: 415px;
   }
 
   @media (min-width: $desktop-width) {
     width: 875px;
-    height: 635px;
     margin-left: 175px;
     margin-top: -155px;
   }
+}
+
+.week-product__text {
+  @media (min-width: $desktop-width) {
+    margin-top: 160px;
+  }
+}
+
+.week-product__text,
+.week-product__order-group {
+  @media (min-width: $tablet-width) {
+    width: 43.5%;
+    margin-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 290px;
+  }
+}
+
+.week-product__text{
+  padding-bottom: 135px;
+
 }
 
 .week-product__description {
@@ -111,16 +132,9 @@
   color: $dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 43.5%;
-    margin-right: 43px;
     margin-bottom: 40px;
 
     @include simple-text-tablet;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 290px;
-    margin: 155px 60px auto 0;
   }
 }
 
@@ -133,29 +147,24 @@
   line-height: 20px;
   color: $dark-grey;
 
-  & tr {
+  tr {
     border-bottom: $light-border;
   }
 
-  & td {
+  td {
     padding: 9px 30px 9px 0;
   }
 
   @media (min-width: $tablet-width) {
-    width: 43.5%;
-    margin-right: 43px;
-    margin-bottom: auto;
-
-    & td {
+    td {
       padding: 9px 8px 9px 0;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 290px;
-    margin-right: 60px;
 
-    & td {
+    td {
       padding: 10px 8px 10px 0;
     }
   }
@@ -164,10 +173,14 @@
 .week-product__photo {
   margin-bottom: 25px;
 
+  img {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 334px;
+
     flex-grow: 0;
-    order: 10;
     margin-top: 10px;
   }
 
@@ -175,6 +188,10 @@
     width: 525px;
     margin-top: 0;
   }
+}
+
+.week-product__order-group {
+  margin-top: -135px;
 }
 
 .week-product__price {
@@ -187,8 +204,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    width: 43.5%;
-    margin: 0 43px 35px 0;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -202,9 +218,6 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: 43.5%;
-    flex-grow: 0;
-    margin-left: 0;
     align-self: stretch;
   }
 

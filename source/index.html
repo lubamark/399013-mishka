@@ -93,21 +93,23 @@
             <h3 class="week-product__subtitle">Товар недели</h3>
           </div>
           <div class="week-product__content">
-            <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="week-product__table">
-              <tr>
-                <td>Цвет:</td>
-                <td>«Тиффани»/серый</td>
-              </tr>
-              <tr>
-                <td>Диаметр:</td>
-                <td>25 см</td>
-              </tr>
-              <tr>
-                <td>Высота:</td>
-                <td>15 см</td>
-              </tr>
-            </table>
+            <div class="week-product__text">
+              <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+              <table class="week-product__table">
+                <tr>
+                  <td>Цвет:</td>
+                  <td>«Тиффани»/серый</td>
+                </tr>
+                <tr>
+                  <td>Диаметр:</td>
+                  <td>25 см</td>
+                </tr>
+                <tr>
+                  <td>Высота:</td>
+                  <td>15 см</td>
+                </tr>
+              </table>
+            </div>
             <div class="week-product__photo">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
@@ -118,8 +120,10 @@
                 <img  src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Внешний вид корзинок">
               </picture>
             </div>
-            <p class="week-product__price">Цена: 990 руб.</p>
-            <a class="button week-product__button modal-add__button">Заказать</a>
+            <div class="week-product__order-group">
+              <p class="week-product__price">Цена: 990 руб.</p>
+              <a class="button week-product__button modal-add__button">Заказать</a>
+            </div>
           </div>
         </div>
       </section>
