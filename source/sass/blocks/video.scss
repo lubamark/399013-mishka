@@ -10,13 +10,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    height: 745px;
+    min-height: 745px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    height: 455px;
+    min-height: 455px;
     margin-bottom: 110px;
   }
 }
@@ -32,7 +33,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    order: 1;
+
     padding: 30px 40px;
   }
 
@@ -42,6 +43,8 @@
     width: auto;
     max-width: 330px;
     padding: 22px 50px 35px 42px;
+    margin-left: 710px;
+    margin-bottom: -177px;
 
     svg {
       margin: 20px 0;
@@ -112,6 +115,10 @@
 
 .video__img {
   min-width: 100%;
+}
+
+.video__text {
+  margin-top: 177px;
 }
 
 .video__description {
