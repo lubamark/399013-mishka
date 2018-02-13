@@ -30,13 +30,14 @@
   @include black-link;
   white-space: nowrap;
   overflow: hidden;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 28px 25px 28px 30px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 
-  @include icon-condition($light-grey);
+  @include icon-condition($middle-light-grey);
 
   &--search svg {
     width: 18px;
@@ -45,9 +46,10 @@
   }
 
   &--cart svg {
-    width: 21px;
+    width: 22px;
     height: 18px;
     margin-right: 25px;
+    margin-top: 4px;
   }
 
   @media (min-width: $tablet-width) {
@@ -56,12 +58,7 @@
     &--search {
       width: 85px;
       height: 88px;
-      overflow: hidden;
-
-      svg {
-        margin-right: 35px;
-        margin-top: 5px;
-      }
+      font-size: 0;
     }
   }
 }

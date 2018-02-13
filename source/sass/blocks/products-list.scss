@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: flex-end;
   }
 }
 
@@ -14,7 +14,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    flex-basis: 50%;
   }
 }
 
@@ -89,5 +89,5 @@
 .products-list__content {
   margin: 0;
   padding: 0;
-  width: 130px;
+  max-width: 130px;
 }

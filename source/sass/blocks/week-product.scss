@@ -134,7 +134,7 @@
   color: $dark-grey;
 
   & tr {
-    border-bottom: 1px solid $light-grey;
+    border-bottom: $light-border;
   }
 
   & td {

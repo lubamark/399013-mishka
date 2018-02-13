@@ -29,7 +29,7 @@
     margin-right: auto;
 
     &[href$=".html"] {
-      @include icon-condition($black);
+      @include icon-condition($very-dark-grey);
     }
   }
 }
