@@ -4,7 +4,6 @@
 
   &::after {
     content: "";
-
     position: absolute;
     bottom: 0;
     left: 0;
@@ -101,12 +100,6 @@
   }
 }
 
-.week-product__text {
-  @media (min-width: $desktop-width) {
-    margin-top: 160px;
-  }
-}
-
 .week-product__text,
 .week-product__order-group {
   @media (min-width: $tablet-width) {
@@ -119,9 +112,12 @@
   }
 }
 
-.week-product__text{
+.week-product__text {
   padding-bottom: 135px;
 
+  @media (min-width: $desktop-width) {
+    margin-top: 160px;
+  }
 }
 
 .week-product__description {
