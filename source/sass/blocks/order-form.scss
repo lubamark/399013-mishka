@@ -225,11 +225,11 @@
   &--radio,
   &--checkbox {
     padding: 10px 0 10px 60px;
-    height: 41px;
+    min-height: 41px;
 
     @media (min-width: $tablet-width) {
       padding: 15px 0 10px 80px;
-      height: 55px;
+      min-height: 55px;
     }
 
     &::before {
