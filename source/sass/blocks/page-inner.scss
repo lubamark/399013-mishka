@@ -1,13 +1,25 @@
+.page-inner {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+}
+
 .page-inner__title {
   background-color: $light-grey;
   margin-bottom: 20px;
 
   & .container {
-    padding: 70px 0;
+    padding: 70px 0 75px 0;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     position: relative;
 
     .container {
