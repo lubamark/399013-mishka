@@ -5,6 +5,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -21,15 +22,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 315px;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: space-between;
     min-height: 660px;
     margin-right: 50px;
     margin-bottom: 25px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
