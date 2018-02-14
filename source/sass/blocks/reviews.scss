@@ -18,12 +18,12 @@
     @media (min-width: $tablet-width) {
       background-size: 100%;
       background-position: 20px 0;
-      height: 15px;
+      height: 20px;
     }
 
     @media (min-width: $desktop-width) {
       background-position: 25px 0;
-      height: 20px;
+      height: 24px;
     }
   }
 
@@ -68,6 +68,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 47px 0;
+    max-width: 440px;
   }
 }
 
