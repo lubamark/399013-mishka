@@ -2,7 +2,7 @@
   margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     position: relative;
 
     .container {
@@ -49,6 +49,7 @@
     &::after {
       background-position: 5px 0;
       background-size: 100%;
+      height: 20px;
     }
   }
 }
@@ -57,21 +58,16 @@
   font-size: 13px;
   line-height: 24px;
   color: $dark-grey;
-  margin-bottom: 25px;
+  margin: 23px auto;
 
   @media (min-width: $tablet-width) {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 30px;
-    margin-bottom: 25px;
-
-    &--wide {
-      font-size: 17px;
-    }
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    &--wide {
-      padding: 0 175px;
-    }
+    max-width: 700px;
+
   }
 }

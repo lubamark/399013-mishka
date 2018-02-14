@@ -1,3 +1,9 @@
+.video {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 15px;
+    }
+}
+
 .video__card {
   @include card-shadow;
   border: $light-border;
@@ -25,7 +31,8 @@
 
   svg {
     fill: $primary-color;
-    margin-right: 10px;
+    width: 32px;
+    height: 32px;
   }
 
   @media (min-width: $tablet-width) {
@@ -49,8 +56,7 @@
 }
 
 .video__title {
-  margin: 0;
-  padding: 0 0 0 25px;
+  margin: 0 0 0 10px;
 
   font-size: 17px;
   line-height: 24px;
@@ -115,15 +121,21 @@
 }
 
 .video__text {
+  margin: 0 35px 35px 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px 45px 40px;
+  }
+
   @media (min-width: $desktop-width) {
     order: 2;
-    margin-top: 177px;
+    width: 250px;
+    margin: 177px auto 0 auto;
   }
 }
 
 .video__description {
-  padding: 0 35px;
-  margin: 0 0 25px 0;
+  margin-bottom: 25px;
 
   font-size: 13px;
   line-height: 24px;
@@ -131,28 +143,14 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
-    padding: 0 40px;
     margin: 0 0 37px 0;
     font-size: 15px;
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-    max-width: 330px;
-    margin: 0 0 45px 0;
-  }
 }
 
 .video__button {
-  margin: 0 35px 35px 35px;
-
-  @media (min-width: $tablet-width) {
-    order: 3;
-    margin: 0 43px 45px 43px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 230px;
-    margin-bottom: 40px;
   }
 }
