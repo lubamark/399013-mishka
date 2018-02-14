@@ -1,9 +1,9 @@
 .order-form {
   margin-bottom: 60px;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 40px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .order-form__fieldset {
@@ -36,7 +36,6 @@
       display: flex;
       align-items: baseline;
       flex-direction: row;
-
     }
   }
 }
@@ -66,7 +65,7 @@
       margin-right: 25px;
 
       &:nth-of-type(2n) {
-        margin-right:0;
+        margin-right: 0;
       }
 
       @media (min-width: $desktop-width) {
@@ -89,9 +88,8 @@
     }
   }
 
-    &--input {
-      margin-bottom: 17px;
-    }
+  &--input {
+    margin-bottom: 17px;
   }
 
   @media (min-width: $tablet-width) {
@@ -314,9 +312,9 @@
     right: 8px;
     bottom: 15px;
 
-      @media (min-width: $tablet-width) {
-        right: 25px;
-      }
+    @media (min-width: $tablet-width) {
+      right: 25px;
+    }
   }
 
   &--email {
