@@ -1,7 +1,7 @@
 //Moдальное окно
 
 var addButton =
-document.querySelectorAll('.modal-add__button');
+document.querySelectorAll('.js-modal-add-button');
 var overlay = document.querySelector('.modal__wrapper');
 var addModal = document.querySelector('.modal-add');
 

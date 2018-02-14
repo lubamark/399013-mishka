@@ -1,32 +1,20 @@
 .headline {
-  font-size: 25px;
+  max-width: 650px;
+  margin: 0 auto;
+
+  font-size: 27px;
   line-height: 30px;
   font-weight: 700;
-  padding: 70px 0;
-  margin: 0;
-
-  &--main {
-    padding: 70px 10px 115px 10px;
-  }
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding: 100px 50px 80px 50px;
-
-    &--main {
-      padding: 155px 40px 585px 40px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-
-    &--main {
-      padding: 155px 200px 585px 200px;
-    }
   }
 }

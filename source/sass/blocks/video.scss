@@ -1,5 +1,7 @@
 .video {
-  margin-bottom: 60px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .video__card {
@@ -10,33 +12,42 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    height: 745px;
+    min-height: 742px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 455px;
+    justify-content: flex-start;
+    min-height: 455px;
+    margin-bottom: 110px;
   }
 }
 
 .video__heading-group {
   display: flex;
   align-items: center;
-  padding: 35px 30px 25px 45px;
+  padding: 22px 30px 25px 30px;
 
   svg {
     fill: $primary-color;
+    width: 32px;
+    height: 32px;
   }
 
   @media (min-width: $tablet-width) {
-    order: 1;
+    padding: 35px 40px 30px 40px;
   }
 
   @media (min-width: $desktop-width) {
+    order: 0;
     flex-direction: column;
     align-items: flex-start;
     width: auto;
     max-width: 330px;
+    padding: 22px 50px 35px 42px;
+    margin-left: 717px;
+    margin-bottom: -177px;
 
     svg {
       margin: 20px 0;
@@ -45,8 +56,7 @@
 }
 
 .video__title {
-  margin: 0;
-  padding: 0 0 0 25px;
+  margin: 0 0 0 10px;
 
   font-size: 17px;
   line-height: 24px;
@@ -64,7 +74,7 @@
 .video__player {
   position: relative;
   background-color: $light-grey;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   &::before {
     content: "";
@@ -93,42 +103,53 @@
   }
 
   @media (min-width: $tablet-width) {
-    order: 0;
+    order: -1;
     height: 455px;
     overflow: hidden;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    order: 1;
     width: 682px;
     margin-right: 35px;
   }
 }
 
-.video__description {
-  padding: 0 35px;
-  margin: 0 0 25px 0;
+.video__img {
+  min-width: 100%;
+}
+
+.video__text {
+  margin: 0 35px 35px 35px;
 
   @media (min-width: $tablet-width) {
-    order: 2;
-    padding: 0 43px;
-    margin: 0 0 40px 0;
+    margin: 0 40px 45px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 330px;
-    margin: 0 0 50px 0;
+    order: 2;
+    width: 250px;
+    margin: 177px auto 0 auto;
+  }
+}
+
+.video__description {
+  margin-bottom: 25px;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin: 0 0 37px 0;
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
 .video__button {
-  margin: 0 35px 35px 35px;
-
-  @media (min-width: $tablet-width) {
-    order: 3;
-    margin: 0 43px;
-  }
-
   @media (min-width: $desktop-width) {
     width: 230px;
   }

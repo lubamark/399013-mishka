@@ -12,7 +12,12 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      padding-top: 10px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
   }
 }
 
@@ -21,13 +26,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-right: auto;
 
     &[href$=".html"] {
-      @include icon-condition($black);
+      @include icon-condition($very-dark-grey);
     }
   }
-}
-
-.page-footer__social {
-  padding: 50px 0 50px 0;
 }

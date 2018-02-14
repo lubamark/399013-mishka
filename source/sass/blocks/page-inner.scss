@@ -1,10 +1,30 @@
+.page-inner {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+}
+
 .page-inner__title {
   background-color: $light-grey;
   margin-bottom: 20px;
 
+  & .container {
+    padding: 70px 0 75px 0;
+  }
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 70px;
     position: relative;
+
+    .container {
+      padding: 95px 0 80px 0;
+    }
 
     &::after {
       content: "";
@@ -16,10 +36,20 @@
       z-index: 20;
       background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
       background-size: auto 15px;
+    }
+  }
 
-      @media (min-width: $desktop-width) {
-        background-size: auto 35px;
-      }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 132px;
+
+    .container {
+      padding: 92px 0 100px 0;
+    }
+
+    &::after {
+      background-position: 5px 0;
+      background-size: 100%;
+      height: 20px;
     }
   }
 }
@@ -28,17 +58,15 @@
   font-size: 13px;
   line-height: 24px;
   color: $dark-grey;
-  margin-bottom: 20px;
+  margin: 23px auto;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    &--wide {
-      padding: 0 175px;
-    }
+    max-width: 700px;
   }
 }

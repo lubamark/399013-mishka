@@ -1,9 +1,9 @@
 $tablet-width: 768px;
-$desktop-width: 1250px;
+$desktop-width: 1150px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-$primary-color: #63d1bb;
+$primary-color: #62d1ba;
 $primary-color-hover: #59d5bc;
 $primary-color-opacity: rgba(#63d1bb, 0.3);
 
@@ -16,10 +16,12 @@ $white: #ffffff;
 $white-hover: rgba(#ffffff, 0.3);
 
 $light-grey: #f1f1f1;
-$middle-light-grey: #b2b2b2;
-$middle-grey: #c7c7c7;
+$middle-light-grey: #d2d2d2;
+$line-grey: #ececec;
+$middle-grey: #c1c1c1;
 $middle-dark-grey: #666666;
 $dark-grey: #444444;
+$very-dark-grey: #221f1f;
 $black: #000000;
 
-$light-border: 1px solid $light-grey;
+$light-border: 1px solid $line-grey;

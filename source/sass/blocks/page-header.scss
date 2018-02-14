@@ -1,16 +1,11 @@
 .page-header {
-  border-top: 1px solid $light-grey;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid #dfdfdf;
 
   .container {
     padding: 0;
 
     @media (min-width: $tablet-width) {
       padding: 0 50px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 100px;
     }
   }
 }
@@ -24,7 +19,7 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 113px;
+    top: 105px;
 
     font-size: 15px;
     line-height: 24px;

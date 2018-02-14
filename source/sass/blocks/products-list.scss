@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: flex-end;
   }
 }
 
@@ -13,21 +14,28 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-    height: 125px;
+    flex-basis: 50%;
   }
 }
 
 .products-list__link {
   display: flex;
   justify-content: space-between;
-  padding: 27px 40px 30px 30px;
+  padding: 25px 40px 15px 30px;
 
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: white;
   text-decoration: none;
+  transform: translateY(0);
+  transition: 0.5s;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 40px 35px 35px;
+  }
 
   cursor: pointer;
   background-color: $primary-color;
@@ -43,7 +51,6 @@
 
     @media (min-width: $tablet-width) {
       transform: translateY(-5px);
-      padding-bottom: 35px;
     }
 
     & svg {
@@ -82,5 +89,5 @@
 .products-list__content {
   margin: 0;
   padding: 0;
-  width: 130px;
+  max-width: 130px;
 }

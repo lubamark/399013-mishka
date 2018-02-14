@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Вязание на заказ / Магазин «Мишка»</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+      body {
+        opacity: 0.8;
+        background-image: url("img/preview/mishka-form-desktop.jpg")
+      }
+</style> -->
   </head>
   <body>
     <header class="page-header">
@@ -12,7 +18,7 @@
         <nav class="main-nav">
           <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
             </picture>
@@ -47,7 +53,7 @@
           </ul>
           <ul class="addon-list">
             <li class="addon-list__item">
-              <a class="addon-list__link" href="#">Новое поступление</a>
+              <a class="addon-list__link" href="#">Новые поступления</a>
             </li>
             <li class="addon-list__item">
                 <a class="addon-list__link" href="#">Распродажа</a>
@@ -64,7 +70,7 @@
         </div>
       </div>
       <div class="container">
-        <p class="page-inner__content page-inner__content--wide">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="page-inner__content">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="order-form__fieldset order-form__fieldset--radio">
@@ -113,20 +119,20 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--name">
           <div class="container">
             <h3 class="order-form__legend">ФИО</h3>
             <div class="order-form__column-group">
               <div class="order-form__group order-form__group--input">
-                <label class="order-form__label" for="name">Имя:</label>
+                <label class="order-form__label order-form__label--name" for="name">Имя:</label>
                 <input class="order-form__input" type="text" name="name" id="name"  placeholder="Введите ваше имя*" required>
               </div>
               <div class="order-form__group order-form__group--input">
-                <label class="order-form__label" for="lastname">Фамилия:</label>
+                <label class="order-form__label order-form__label--name" for="lastname">Фамилия:</label>
                 <input class="order-form__input" type="text" name="lastname" id="lastname"  placeholder="Укажите фамилию*" required>
               </div>
               <div class="order-form__group order-form__group--input">
-                <label class="order-form__label" for="patronymic">Отчество:</label>
+                <label class="order-form__label order-form__label--name" for="patronymic">Отчество:</label>
                 <input class="order-form__input" type="text" name="patronymic" id="patronymic"  placeholder="Отчество, если пожелаете">
               </div>
             </div>
@@ -136,25 +142,33 @@
           <div class="container">
             <h3 class="visually-hidden">Контакты и пожелания</h3>
             <div class="order-form__column-group">
-              <div class="order-form__group order-form__group--input">
-                <label class="order-form__legend" for="tel">Тел:</label>
+              <div class="order-form__group order-form__group--contacts">
+                <label class="order-form__legend order-form__legend--label" for="tel">Тел:</label>
                 <input class="order-form__input" type="tel" name="tel" id="tel"  placeholder="+7 XXX XX XX*" required>
+                <svg class="order-form__icon order-form__icon--tel" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-phone">
+                </svg>
               </div>
-              <div class="order-form__group order-form__group--input">
-                <label class="order-form__legend" for="email">E-mail</label>
+              <div class="order-form__group order-form__group--contacts">
+                <label class="order-form__legend order-form__legend--label" for="email">E-mail</label>
                 <input class="order-form__input" type="email" name="email" id="email"  placeholder="Ваш Email*" required>
+                <svg class="order-form__icon order-form__icon--email" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#icon-mail">
+                </svg>
               </div>
             </div>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--textarea">
           <div class="container">
-            <label class="order-form__legend" for="wishes">Доп</label>
-              <textarea class="order-form__input order-form__input--textarea" name="wishes" id="wishes" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
+            <div class="order-form__group order-form__group--contacts">
+              <label class="order-form__legend order-form__legend--textarea" for="wishes">Доп</label>
+                <textarea class="order-form__input order-form__input--textarea" name="wishes" id="wishes" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
+            </div>
           </div>
         </fieldset>
-        <div class="container">
-          <div class="order-form__submit-group">
+        <div class="order-form__submit-group">
+          <div class="container">
             <small class="order-form__caption">*Поля обязательны для заполнения</small>
             <button class="button order-form__submit" type="submit">Отправить заказ</button>
           </div>

@@ -3,15 +3,14 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
-    flex-basis: 55%;
+    width: 350px;
     margin-left: auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 380px;
+    max-width: 360px;
     order: 2;
   }
 }
@@ -30,13 +29,14 @@
   @include black-link;
   white-space: nowrap;
   overflow: hidden;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 28px 25px 28px 30px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 
-  @include icon-condition($light-grey);
+  @include icon-condition($middle-light-grey);
 
   &--search svg {
     width: 18px;
@@ -45,22 +45,23 @@
   }
 
   &--cart svg {
-    width: 21px;
+    width: 22px;
     height: 18px;
-    margin-right: 15px;
+    margin-right: 13px;
+    margin-top: 4px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 33px 0 33px 35px;
+    padding: 30px 0 30px 32px;
 
     &--search {
-      width: 85px;
-      height: 90px;
-      overflow: hidden;
+      width: 83px;
+      height: 88px;
+      font-size: 0;
+    }
 
-      svg {
-        margin-right: 35px;
-      }
+    &--cart svg {
+      margin-right: 30px;
     }
   }
 }
