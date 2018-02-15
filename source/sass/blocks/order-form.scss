@@ -70,8 +70,9 @@
 
 .order-form__row-group {
   .order-form__group {
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -81,7 +82,6 @@
 
     .order-form__group {
       flex-grow: 0;
-;
     }
 
     @media (min-width: $desktop-width) {
@@ -378,6 +378,7 @@
       justify-content: space-between;
     }
   }
+
   @media (min-width: $desktop-width) {
     max-width: 800px;
     margin: 15px auto 0 auto;
