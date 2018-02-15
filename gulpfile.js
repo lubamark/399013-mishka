@@ -11,7 +11,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
-
+var cheerio = require("gulp-cheerio");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -40,7 +40,20 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("images", function () {
+gulp.task("removeFill", function() {
+  return gulp
+    .src("source/img*.svg")
+    .pipe(cheerio({
+        run: function ($) {
+          $('[fill]').removeAttr('fill');
+        },
+        parserOptions: { xmlMode: true }
+      }))
+      .pipe(svgstore({ inlineSvg: true }))
+      .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("images", ["removeFill"], function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
@@ -56,7 +69,7 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("sprite", function () {
+gulp.task("sprite", ["removeFill"], function () {
   return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({
       inlineSvg: true
