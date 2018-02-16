@@ -18,7 +18,6 @@ var run = require("run-sequence");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
-var pump = require("pump");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
