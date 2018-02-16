@@ -131,7 +131,7 @@
   @media (min-width: $desktop-width) {
     order: 2;
     width: 250px;
-    margin: 177px auto 0 auto;
+    margin: 177px auto 45px auto;
   }
 }
 
@@ -151,7 +151,10 @@
 }
 
 .video__button {
+  @media (min-width: $tablet-width) {
+  }
   @media (min-width: $desktop-width) {
     width: 230px;
+
   }
 }
