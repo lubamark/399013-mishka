@@ -18,6 +18,7 @@ var run = require("run-sequence");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
+var pump = require("pump");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -81,10 +82,14 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("jsmin", function () {
-  return gulp.src("source/js/*.js")
-  .pipe(uglify())
-  .pipe(gulp.dest("build/js"));
+gulp.task("jsmin", function (cb) {
+  pump([
+    gulp.src("source/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
+  ],
+  cb
+);
 });
 
 gulp.task("copy", function () {
