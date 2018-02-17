@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин «Мишка»</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg">"</include>
+    <div class="hidden">
+      <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
       <div class="container">
@@ -71,7 +73,7 @@
             <ul class="products-list">
               <li class="products-list__item">
                 <a class="products-list__link" href="#">
-                  <p class="products-list__content">Предметы интерьера</p>
+                  <span class="products-list__content">Предметы интерьера</span>
                   <svg width="40" height="62" aria-hidden="true" role="presentation">
                     <use xlink:href="img/sprite.svg#icon-interior"></use>
                   </svg>
@@ -79,8 +81,9 @@
               </li>
               <li class="products-list__item">
                 <a class="products-list__link products-list__link--dark" href="#">
-                  <p class="products-list__content">Детские игрушки</p>
-                  <svg width="60" height="60" aria-hidden="true" role="presentation"><use xlink:href="img/sprite.svg#icon-toy"></use>
+                  <span class="products-list__content">Детские игрушки</span>
+                  <svg width="60" height="60" aria-hidden="true" role="presentation">
+                    <use xlink:href="img/sprite.svg#icon-toy"></use>
                   </svg>
                 </a>
               </li>
@@ -193,7 +196,9 @@
               <div class="contacts-item__value">г. Санкт-Петербург,<br> ул.&nbsp;Большая Конюшенная,<br> д.&nbsp;19/8, офис 101</div>
             </div>
           </div>
-          <div class="contacts__map" id="map">
+          <div class="contacts__map">
+            <div class="contacts__yandex-map" id="map">
+            </div>
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -272,5 +277,7 @@
     <script src="js/picturefill.min.js"></script>
     <script src="js/svgxuse.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

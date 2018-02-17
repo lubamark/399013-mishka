@@ -27,7 +27,7 @@
 .video__heading-group {
   display: flex;
   align-items: center;
-  padding: 22px 30px 25px 30px;
+  padding: 25px 30px 25px 30px;
 
   svg {
     fill: $primary-color;
@@ -75,7 +75,7 @@
 .video__player {
   position: relative;
   background-color: $light-grey;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   &::before {
     content: "";
@@ -131,12 +131,13 @@
   @media (min-width: $desktop-width) {
     order: 2;
     width: 250px;
-    margin: 177px auto 0 auto;
+    margin: 175px auto 45px auto;
   }
 }
 
 .video__description {
   margin-bottom: 25px;
+  margin-top: 15px;
 
   font-size: 13px;
   line-height: 24px;
@@ -147,6 +148,11 @@
     margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+    margin-top: 0;
   }
 }
 

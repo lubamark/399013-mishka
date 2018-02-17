@@ -15,14 +15,16 @@ if (addButton) {
   };
 };
 
+if (overlay && addModal) {
   window.addEventListener('keydown', function(evt) {
-    if (evt.keyCode === 27) {
-      if (overlay.classList.contains('modal__wrapper--show') && addModal.classList.contains('modal-add--show')) {
+    if (overlay.classList.contains('modal__wrapper--show') && addModal.classList.contains('modal-add--show')) {
+      if (evt.keyCode === 27) {
         overlay.classList.remove('modal__wrapper--show');
         addModal.classList.remove('modal-add--show');
       };
     }
   });
+}
 
 //выпадающее меню
 var menuButton = document.querySelector('.main-nav__toggle');
