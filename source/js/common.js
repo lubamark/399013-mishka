@@ -6,8 +6,8 @@ var overlay = document.querySelector('.modal__wrapper');
 var addModal = document.querySelector('.modal-add');
 
 if (addButton) {
-  for (var i = 0; i < addButton.length; i++){
-    addButton[i].addEventListener('click', function(evt){
+  for (var i = 0; i < addButton.length; i++) {
+    addButton[i].addEventListener('click', function(evt) {
       evt.preventDefault();
       overlay.classList.add('modal__wrapper--show');
       addModal.classList.add('modal-add--show');
@@ -30,13 +30,13 @@ if (overlay && addModal) {
 var menuButton = document.querySelector('.main-nav__toggle');
 var menuWrapper = document.querySelectorAll('.main-nav__list');
 
-if ( menuButton.classList.contains('main-nav__toggle--close') && menuWrapper[0].classList.contains('main-nav__list--open')  && menuWrapper[1].classList.contains('main-nav__list--open')  ) {
+if ( menuButton.classList.contains('main-nav__toggle--close') && menuWrapper[0].classList.contains('main-nav__list--open')  && menuWrapper[1].classList.contains('main-nav__list--open')) {
   menuButton.classList.remove('main-nav__toggle--close');
   menuWrapper[0].classList.remove('main-nav__list--open');
   menuWrapper[1].classList.remove('main-nav__list--open');
 };
 
-menuButton.addEventListener('click', function(evt){
+menuButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   menuButton.classList.toggle('main-nav__toggle--close');
   menuWrapper[0].classList.toggle('main-nav__list--open');
