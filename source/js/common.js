@@ -22,6 +22,15 @@ if (overlay && addModal) {
       };
     }
   });
+  window.addEventListener('click', function (evt) {
+    if (overlay.classList.contains('modal--show') && addModal.classList.contains('modal-add--show')) {
+      var clickArea = evt.target.classList;
+      if (clickArea.contains('modal--show')) {
+        overlay.classList.remove('modal--show');
+        addModal.classList.remove('modal-add--show');
+      }
+    }
+  });
 }
 //Выпадающее меню
 var menuButton = document.querySelector('.main-nav__toggle');
